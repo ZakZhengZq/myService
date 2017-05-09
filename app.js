@@ -19,6 +19,13 @@ app.use(async (ctx, next) => {
     ctx.response.set('X-Response-Time', `${execTime}ms`);
 });
 
+// parse user from cookie:
+const parseUser = require('./cookie/parseUser');
+app.use(async (ctx, next) => {
+    ctx.state.user = parseUser(ctx.cookies.get('name') || '');
+    await next();
+});
+
 //2. 集中处理静态文件
 let staticFile= require('./static/static-files');
 app.use(staticFile('/static/', __dirname + '/static'));
@@ -42,5 +49,47 @@ app.use(controller());
 
 
 // 在端口3000监听:
-app.listen(3000);
+let server = app.listen(3000);
+const init_ws = require('./websocket/init_ws');
+
+var messageIndex = 0;
+function createMessage(type, user, data) {
+    messageIndex ++;
+    return JSON.stringify({
+        id: messageIndex,
+        type: type,
+        user: user,
+        data: data
+    });
+}
+
+function onConnect() {
+    let user = this.user;
+    let msg = createMessage('join', user, `${user.name} joined.`);
+    this.wss.broadcast(msg);
+    // build user list:
+    let users = this.wss.clients.map(function (client) {
+        return client.user;
+    });
+    this.send(createMessage('list', user, users));
+}
+
+function onMessage(message) {
+    console.log(message);
+    if (message && message.trim()) {
+        let msg = createMessage('chat', this.user, message.trim());
+        this.wss.broadcast(msg);
+    }
+}
+
+function onClose() {
+    let user = this.user;
+    let msg = createMessage('left', user, `${user.name} is left.`);
+    this.wss.broadcast(msg);
+}
+
+
+app.wss = init_ws(server, onConnect, onMessage, onClose);
+
+
 console.log('app started at port 3000...');

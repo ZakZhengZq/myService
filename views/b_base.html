@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/b_base.css">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/vue.min.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.particleground.min.js" ></script>
+    <!-- 要合并-->
+    <script src="/static/js/b_base/b_base_sidebar.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#particles').particleground({
+                dotColor: '#E8E8E8',
+                lineColor: '#E8E8E8'
+            });
+
+            $(".sidebar").mouseenter(function() {
+                $(this).addClass("sidebar-hover");
+            }).mouseleave(function() {
+                $(this).removeClass("sidebar-hover");
+            });
+            $(".func-item").mouseenter(function() {
+                $(this).children("div").css({
+                    "left": left,
+                    "opacity": "0",
+                    "display": "block"
+                }).clearQueue().show().stop().animate({
+                    "left": left - 15,
+                    "opacity": "1"
+                }, "fast");
+            }).mouseleave(function() {
+                $(this).children("div").stop().delay().animate({
+                    "left": left,
+                    "opacity": "0"
+                }, "fast", function() {
+                    $(this).hide()
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="particles">
+        <canvas id="pg-canvas"></canvas>
+    </div>
+    <div class="sidebar" aria-hidden="true">
+        <div class="func-btns func-btns-up">
+            <span class="func-item">
+                <i class="func-nav icon "><span>目录</span></i>
+                <div>
+                  <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+                  <a href="javascript:void(0);" onclick="return false;">显示目录</a>
+                </div>
+            </span>
+            <span class="func-item">
+                <i class="func-font icon">&#xe604;<span>设置</span></i>
+                <div class="font-choose-box">
+                  <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+                  <div class="font-choose bg-choose">
+                    <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-sun font-type-song"><i class="icon">&#xe61a;</i></a>
+                    <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-moon font-type-hei"><i class="icon">&#xe619;</i></a>
+                  </div>
+                  <div class="font-choose">
+                    <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-song">黑体</a>
+                    <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-hei">宋体</a>
+                  </div>
+                </div>
+            </span>
+            <span class="func-item">
+                <a href="http://weibo.com/173248656" target="_blank"><i class="func-fb icon">博<span>分享</span></i></a>
+                <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+                  <p class="seperator sharecanvas"><a href="javascript: void(0);">截屏分享</a></p>
+                  <p><a href="http://weibo.com/173248656" target="_blank">微博关注</a></p>
+                </div>
+            </span>
+            <span class="func-item">
+                <i class="func-about icon">&#x263b;<span>关于</span></i>
+                <div>
+                  <i class="left-arrow"></i><i class="left-arrow-clone"></i>
+                  <p><a href="/about/" class="func-about-link" target="_blank">关于作者</a></p>
+                  <div id="followMeOnWeibo"></div>
+                </div>
+            </span>
+        </div>
+        <div class="func-btns">
+            <span class="func-item">
+                <a href="http://demo.barretlee.com" target="_blank"><i class="func-rss icon">&#xe603;<span>实验</span></i></a>
+                <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+                  <p class="seperator"><a href="http://demo.barretlee.com" target="_blank">Demo平台</a></p>
+                  <p class="seperator"><a href="http://md.barretlee.com" target="_blank">WX格式</a></p>
+                  <p><a href="http://snippets.barretlee.com" target="_blank">Snippet应用</a></p>
+                </div>
+            </span>
+            <span class="func-item">
+                <i class="func-fb icon">&#x2121;<span>留言</span></i>
+                <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+                  <p class="seperator"><a href="/message/" target="_blank">给我留言</a></p>
+                  <p><a href="/comments/" target="_blank">近期留言</a></p>
+                </div>
+            </span>
+            <span class="func-item">
+                <a href="/friends/" target="_blank"><i class="func-rss icon">&#xe601;<span>友链</span></i></a>
+                <div><i class="left-arrow"></i><i class="left-arrow-clone"></i>
+                  <a href="/friends/" target="_blank">友情链接</a>
+                </div>
+            </span>
+            <span class="func-item">
+                <a href="/rss2.xml" target="_blank"><i class="func-rss icon">&#x25c8;<span>订阅</span></i></a>
+                <div><i class="left-arrow"></i><i class="left-arrow-clone"></i><a href="/rss2.xml" target="_blank">订阅我吧！</a></div>
+            </span>
+        </div>
+    </div>
+
+    <i class="icon icon-shezhi"></i>
+    {% block main %} {% endblock %}
+</body>
+</html>

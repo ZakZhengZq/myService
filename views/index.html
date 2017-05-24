@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/TweenMax.min.js"></script>
+    <script src="/static/js/Stats.min.js"></script>
+    <style>
+        *{margin:0;padding:0;list-style-type:none}svg{width:100%;height:100%}svg g{mix-blend-mode:lighten}svg polygon{stroke:none;fill:white}body,html{width:100%;height:100%;overflow:hidden;overflow:hidden}body{font-family:'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;color:#333;background:#e0e6eb}#menu{position:absolute;left:0;width:320px;text-align:center;top:50%;left:50%;margin-left:-160px;margin-top:-160px;-webkit-user-select:none;-moz-user-select:none;user-select:none}h1,h2{position:relative}h1{font-family:'Montserrat', 'Helvetica Neue', Arial, sans-serif;font-weight:700;font-size:30px;letter-spacing:9px;text-transform:uppercase;margin:12px 0;left:4px}h2{color:#999;font-weight:normal;font-size:15px;letter-spacing:.12em;margin-bottom:30px;left:3px}p{font-size:14px;line-height:2em;margin:0;letter-spacing:2px}canvas{position:absolute;top:0;left:0;z-index:0;width:100%;height:100%;pointer-events:none}a{color:#999;text-decoration:none;transition:color .2s ease}a:hover{text-decoration:none;color:#f33}
+    </style>
 </head>
+
 <body>
-<h1>{{ title }}</h1>
+<div id="menu">
+    <h1>SuperHero</h1>
+    <h2>Standing on Shoulders of Giants</h2>
+    <p><a href="/blog">Blog</a></p>
+    <p><a>Github</a></p>
+    <p><a>Email</a></p>
+    <p><a>微博</a></p>
+</div>
+<svg id="demo" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+    <defs>
+        <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0" color-interpolation="sRGB">
+            <stop id="stop1a" offset="0%" stop-color="#12a3b4"></stop>
+            <stop id="stop1b" offset="100%" stop-color="#ff509e"></stop>
+        </linearGradient>
+        <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="0" color-interpolation="sRGB">
+            <stop id="stop2a" offset="0%" stop-color="#e3bc13"></stop>
+            <stop id="stop2b" offset="100%" stop-color="#00a78f"></stop>
+        </linearGradient>
+    </defs>
+    <rect id="rect1" x="0" y="0" width="1600" height="600" stroke="none" fill="url(#grad1)"></rect>
+    <rect id="rect2" x="0" y="0" width="1600" height="600" stroke="none" fill="url(#grad2)"></rect>
+</svg>
+<script>
+    function init(e){function t(){tesselation.next(a),gradients.next(a)}function n(e){window.requestAnimationFrame(n)}if(e){var r=new Stats;r.domElement.style.position="absolute",r.domElement.style.left="0",r.domElement.style.top="0",document.body.appendChild(r.domElement),requestAnimationFrame(function e(){r.update(),requestAnimationFrame(e)})}var o=document.getElementById("demo");tesselation.setup(o),gradients.setup();var a=3e3;o.addEventListener("click",function(){t(),window.requestAnimationFrame(n)},!1),t(),window.requestAnimationFrame(n)}var calcDelaunayTriangulation=function(){function e(e){var t,n,r,o,a,i,l=Number.POSITIVE_INFINITY,c=Number.POSITIVE_INFINITY,u=Number.NEGATIVE_INFINITY,s=Number.NEGATIVE_INFINITY;for(t=e.length;t--;)e[t][0]<l&&(l=e[t][0]),e[t][0]>u&&(u=e[t][0]),e[t][1]<c&&(c=e[t][1]),e[t][1]>s&&(s=e[t][1]);return n=u-l,r=s-c,o=Math.max(n,r),a=l+.5*n,i=c+.5*r,[[a-20*o,i-o],[a,i+20*o],[a+20*o,i-o]]}function t(e,t,n,o){var a,i,l,c,u,s,d,h,f,m,p=e[t][0],g=e[t][1],y=e[n][0],w=e[n][1],I=e[o][0],v=e[o][1],E=Math.abs(g-w),b=Math.abs(w-v);if(E<r&&b<r)throw new Error("Can't get circumcircle since all 3 points are y-aligned");return l=-(y-p)/(w-g),c=-(I-y)/(v-w),u=(p+y)/2,s=(y+I)/2,d=(g+w)/2,h=(w+v)/2,a=E<r?u:b<r?s:(l*u-c*s+h-d)/(l-c),i=E>b?l*(a-u)+d:c*(a-s)+h,f=y-a,m=w-i,{i:t,j:n,k:o,x:a,y:i,r:f*f+m*m}}function n(e){var t,n,r,o,a,i;for(n=e.length;n;)for(o=e[--n],r=e[--n],t=n;t;)if(i=e[--t],a=e[--t],r===a&&o===i||r===i&&o===a){e.splice(n,2),e.splice(t,2);break}}var r=1/1048576;return function(o){var a,i,l,c,u,s,d,h,f,m,p,g,y=o.length;if(y<3||y>2e3)return[];for(o=o.slice(0),l=new Array(y),a=y;a--;)l[a]=a;for(l.sort(function(e,t){return o[t][0]-o[e][0]}),c=e(o),o.push(c[0],c[1],c[2]),u=[t(o,y+0,y+1,y+2)],s=[],d=[],a=l.length;a--;d.length=0){for(g=l[a],i=u.length;i--;)h=o[g][0]-u[i].x,h>0&&h*h>u[i].r?(s.push(u[i]),u.splice(i,1)):(f=o[g][1]-u[i].y,h*h+f*f-u[i].r>r||(d.push(u[i].i,u[i].j,u[i].j,u[i].k,u[i].k,u[i].i),u.splice(i,1)));for(n(d),i=d.length;i;)p=d[--i],m=d[--i],u.push(t(o,m,p,g))}for(a=u.length;a--;)s.push(u[a]);for(u.length=0,a=s.length;a--;)s[a].i<y&&s[a].j<y&&s[a].k<y&&u.push(s[a].i,s[a].j,s[a].k);return u}}(),tesselation=function(){function e(){var e,t,o,a,i=window.innerWidth,l=window.innerHeight;e=i/l>n/r?250*n/i:250*r/l;var c=[],u=n%e/2,s=r%e/2;for(o=Math.floor(n/e)+1;o>=-1;o--)for(a=Math.floor(r/e)+1;a>=-1;a--)c.push([u+e*(o+.75*(Math.random()-.5)),s+e*(a+.75*(Math.random()-.5))]);var d,h=calcDelaunayTriangulation(c),f=document.createElementNS("http://www.w3.org/2000/svg","g");for(t=h.length;t;)d=document.createElementNS("http://www.w3.org/2000/svg","polygon"),d.setAttribute("points",c[h[--t]][0]+","+c[h[t]][1]+" "+c[h[--t]][0]+","+c[h[t]][1]+" "+c[h[--t]][0]+","+c[h[t]][1]),f.appendChild(d);return f}var t,n,r,o;return{setup:function(e){t=e;var o=t.getAttribute("viewBox").split(/\D/g);n=o[2],r=o[3]},next:function(n){var r,a,i;if(n/=1e3,o&&o.children&&o.children.length){for(r=o,i=r.children.length,a=i;a--;)TweenMax.to(r.children[a],.4*n,{opacity:0,delay:n*(.3*a/i)});TweenMax.delayedCall(.75*n,function(e){t.removeChild(e)},[r],this)}var l=e();for(i=l.children.length,a=i;a--;)TweenMax.fromTo(l.children[a],.4*n,{opacity:0},{opacity:.3+.25*Math.random(),delay:n*(.3*a/i+.3),ease:Back.easeOut});t.appendChild(l),o=l}}}(),gradients=function(){function e(e){var t=Math.floor(o.length*Math.random()),n=Math.floor(3*Math.random())+3;n=(t+n*(Math.random()<.5?-1:1)+o.length)%o.length,e.stopA.setAttribute("stop-color",o[t]),e.stopB.setAttribute("stop-color",o[n])}var t,n,r,o=["#3c6df0","#12a3b4","#00a78f","#00aa5e","#81b532","#e3bc13","#ffb000","#fe8500","#fe6100","#e62325","#dc267f","#c22dd5","#9753e1","#5a3ec8"];return{setup:function(){r=!1,t={stopA:document.getElementById("stop1a"),stopB:document.getElementById("stop1b"),rect:document.getElementById("rect1")},n={stopA:document.getElementById("stop2a"),stopB:document.getElementById("stop2b"),rect:document.getElementById("rect2")},t.rect.style.opacity=0,n.rect.style.opacity=0},next:function(o){o/=1e3;var a,i;r?(i=t,a=n):(i=n,a=t),r=!r,TweenMax.to(i.rect,.55*o,{opacity:0,delay:.2*o,ease:Sine.easeOut}),e(a),TweenMax.to(a.rect,.65*o,{opacity:1,ease:Sine.easeIn})}}}();init();
+</script>
 </body>
 </html>

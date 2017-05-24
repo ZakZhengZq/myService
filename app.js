@@ -10,7 +10,7 @@ const app = new Koa();
 
 //1. log request URL:
 app.use(async (ctx, next) => {
-    console.log(`Here Process ${ctx.request.method} --> ${ctx.request.url}`);
+    //console.log(`Here Process ${ctx.request.method} --> ${ctx.request.url}`);
     var
         start = new Date().getTime(),
         execTime;

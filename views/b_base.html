@@ -13,16 +13,17 @@
     <!-- 要合并-->
     <script src="/static/js/b_base/b_base_sidebar.js"></script>
 
-    <link rel="stylesheet" href="/static/css/b_base.css">
+    <link rel="stylesheet" href="/static/css/blog_base_sidebar.css">
     <link rel="stylesheet" href="/static/css/icon_font/iconfont.css">
 
     <script>
         $(document).ready(function() {
             $('#particles').particleground({
                 dotColor: '#E8E8E8',
-                lineColor: '#E8E8E8'
+                lineColor: '#E8E8E8',
+                density:10000,
+                proximity:100,
             });
-
 
             var left=48;
             $(".sidebar").mouseenter(function() {
@@ -36,7 +37,7 @@
                     "opacity": "0",
                     "display": "block"
                 }).clearQueue().show().stop().animate({
-                    "left":left+15,
+                    "left":left-15,
                     "opacity": "1"
                 }, "fast");
             }).mouseleave(function() {
@@ -71,8 +72,8 @@
                 <div class="font-choose-box">
                   <i class="left-arrow"></i><i class="left-arrow-clone"></i>
                   <div class="font-choose bg-choose">
-                    <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-sun font-type-song"><i class="icon">&#xe61a;</i></a>
-                    <a href="javascript:void(0)" onclick="return false;" class="bg-type bg-type-moon font-type-hei"><i class="icon">&#xe619;</i></a>
+                    <a href="javascript:void(0)" onclick="return false;" class="bg-type  font-type-song iconfont icon-baitian"><i class="icon"></i></a>
+                    <a href="javascript:void(0)" onclick="return false;" class="bg-type  font-type-hei iconfont icon-yewan"><i class="icon"></i></a>
                   </div>
                   <div class="font-choose">
                     <a href="javascript:void(0)" onclick="return false;" class="font-type font-type-song">黑体</a>

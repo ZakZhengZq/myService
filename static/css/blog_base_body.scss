@@ -80,3 +80,24 @@ body {
     }
   }
 }
+nav {
+  margin-top: 20px;
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+  display: inline-block !important;
+  width: 100%;
+  .container-fluid {
+    .navbar-header {
+      a {
+        margin-right: 130.5px;
+      }
+    }
+    #example-navbar-collapse {
+      ul {
+        li {
+          margin-right: 60px;
+        }
+      }
+    }
+  }
+}

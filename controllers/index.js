@@ -5,13 +5,13 @@ var fn_hello = async (ctx, next) => {
     //var name = ctx.params.name;
     //ctx.response.body = '<h1>Hello, ${name}!</h1>';
     ctx.render('index.html', {
-        title: 'Personal Blog'
+        title: 'Menu | 疯狂大石头的个人网站'
     });
 };
 
 var fn_blog = async (ctx, next) => {
     ctx.render('hello.html', {
-        title: 'blog'
+        title: 'Blog | 疯狂大石头的个人网站'
     });
 };
 

@@ -11,7 +11,7 @@
   transition: all 0.3s;
   *border-right: 1px solid #ccc;
   z-index: 80;
-  @media (max-width: 650px) {
+  @media (max-width: 1020px) {
     display: none;
   }
 }

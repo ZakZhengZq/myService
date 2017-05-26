@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/vue.min.js"></script>
-    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/static/js/jquery.particleground.min.js" ></script>
     <!-- 要合并-->
     <script src="/static/js/b_base/b_base_sidebar.js"></script>
 
     <link rel="stylesheet" href="/static/css/blog_base_sidebar.css">
+    <link rel="stylesheet" href="/static/css/blog_base_body.css">
     <link rel="stylesheet" href="/static/css/icon_font/iconfont.css">
 
     <script>
@@ -54,6 +55,7 @@
 
     <!--以上要处理合并-->
 </head>
+
 <body>
     <div id="particles">
         <canvas id="pg-canvas"></canvas>
@@ -124,6 +126,37 @@
                 <div><i class="left-arrow"></i><i class="left-arrow-clone"></i><a href="/rss2.xml" target="_blank">订阅我吧！</a></div>
             </span>
         </div>
+    </div>
+    <div class="site">
+        <header class="site-header">
+          <hgroup>
+              <h1><a href="blog" title="你好啊，旅行者">疯狂大石头的个人网站</a></h1>
+              <h2>Doubt is the strongest enemy</h2>
+          </hgroup>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">菜鸟教程</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                  <!--<div class="navbar-collapse collapse in" id="example-navbar-collapse" aria-expanded="true" style="">-->
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">iOS</a></li>
+                            <li><a href="#">SVN</a></li>
+                            <li><a href="#">SVN</a></li>
+                            <li><a href="#">SVN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
     </div>
     {% block main %} {% endblock %}
 </body>

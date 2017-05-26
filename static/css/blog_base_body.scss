@@ -1,0 +1,82 @@
+html {
+  font-size: 87.5%;
+}
+body {
+  font-size: 14px;
+  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  &.custom-font-enabled {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  }
+}
+/* Minimum width of 960 pixels. */
+@media screen and (min-width: 960px) {
+  body {
+    .site {
+      padding: 0 40px;
+      padding: 0 2.857142857rem;
+      margin-top: 48px;
+      margin-top: 3.428571429rem;
+      margin-bottom: 48px;
+      margin-bottom: 3.428571429rem;
+      box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .site {
+    margin: 0 auto;
+    max-width: 960px;
+    max-width: 68.571428571rem;
+    overflow: hidden;
+  }
+}
+
+#particles{
+  position:absolute;
+  top:0px;
+  left:0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Page structure */
+.site {
+  padding: 0 24px;
+  padding: 0 1.714285714rem;
+  background-color: #fff;
+}
+/* Header */
+.site-header {
+  padding: 24px 0;
+  padding: 1.714285714rem 0;
+  h1 {
+    font-size: 24px;
+    font-size: 1.714285714rem;
+    line-height: 1.285714286;
+    margin-bottom: 14px;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 13px;
+    font-size: 0.928571429rem;
+    line-height: 1.846153846;
+    color: #757575;
+  }
+  h1,h2{
+    text-align: center;
+    a{
+      color: #515151;
+      display: inline-block;
+      text-decoration: none;
+      &:hover{
+        color: #21759b;
+      }
+    }
+  }
+}

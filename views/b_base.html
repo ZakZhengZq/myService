@@ -11,7 +11,7 @@
     <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/static/js/jquery.particleground.min.js" ></script>
     <!-- 要合并-->
-    <script src="/static/js/b_base/b_base_sidebar.js"></script>
+    <!--<script src="/static/js/b_base/b_base_sidebar.js"></script>-->
 
     <link rel="stylesheet" href="/static/css/blog_base_sidebar.css">
     <link rel="stylesheet" href="/static/css/blog_base_body.css">
@@ -136,27 +136,37 @@
             <nav role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        <button type="button" data-toggle="collapse"
                                 data-target="#example-navbar-collapse">
-                            <span class="sr-only">切换导航</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+                            <i class="iconfont icon-shezhi"><span></span></i>
                         </button>
                         <a class="navbar-brand" href="#">Menu</a>
                     </div>
                     <div class="collapse navbar-collapse" id="example-navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">SVN</a></li>
-                            <li><a href="#">SVN</a></li>
-                            <li><a href="#">SVN</a></li>
-                            <li><a href="#">SVN</a></li>
+                            <li><a href="#">聚焦前端</a></li>
+                            <li><a href="#">技术博客</a></li>
+                            <li><a href="#">聊天&留言</a></li>
+                            <li><a href="#">关于我</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
+        <div rel="blog_base_inner">
+            <div>
+                <aside>
+
+                </aside>
+                <section>{% block main %} {% endblock %}</section>
+            </div>
+        </div>
+        <footer role="contentinfo">
+          <div>
+              <span>本站由 <a href="#" title="这是作者">疯狂大石头</a> 纯手工制作</span>
+              <span>若您对本站有宝贵的建议和意见，欢迎您联系我:<a href="mailto:zzqworkspace@126.com">zzqworkspace@126.com</a></span>
+          </div>
+        </footer>
     </div>
-    {% block main %} {% endblock %}
 </body>
 </html>

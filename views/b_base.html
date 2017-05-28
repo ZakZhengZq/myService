@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="/static/css/blog_base_sidebar.css">
     <link rel="stylesheet" href="/static/css/blog_base_body.css">
+    <link rel="stylesheet" href="/static/css/blog_base_inner.css">
     <link rel="stylesheet" href="/static/css/icon_font/iconfont.css">
 
     <script>
@@ -156,7 +157,49 @@
         <div rel="blog_base_inner">
             <div>
                 <aside>
-
+                   <div class="widgets-container">
+                       <div class="widget-warp widget-permes">
+                           <a href="#" target="_blank">
+                               <img src="/static/images/photo.png">
+                           </a>
+                           <span>疯狂大石头</span>
+                           <em>"这里是签名"</em>
+                       </div>
+                       <div class="widget-warp" id="widget-latest">
+                           <h3 class="widget-title">最新文章</h3>
+                           <div class="widget-latest">
+                               <ul id="recent-post">
+                                   <li>
+                                       <div class="item-thumbnail">
+                                           <a href="/blog/2017/05/18/how-to-display-git-diff/">
+    <span style="background-image:url(https://gw.alicdn.com/tfs/TB1_6wnRXXXXXbwXFXXXXXXXXXX-900-500.jpg)" alt="实现一个Git Diff解析器" class="thumbnail-image"></span>
+                                           </a>
+                                       </div>
+                                       <div class="item-inner">
+                                           <p class="item-category"><a class="article-category-link" href="/categories/Web开发/">Web开发</a></p>
+                                           <p class="item-title"><a href="/blog/2017/05/18/how-to-display-git-diff/" class="title">如何实现一个 Git Diff 解析器</a></p>
+                                           <p class="item-author">by 栖邀</p>
+                                           <p class="item-date">at <time datetime="2017-05-18T01:56:11.000Z" itemprop="datePublished">2017-05-18</time></p>
+                                       </div>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="widget-warp widget-list">
+                           <h3 class="widget-title">分类</h3>
+                           <div class="widget">
+                               <ul>
+                                   <li>
+                                       <a>Node.js</a>
+                                       <span class="category-list-count">46</span>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="widget-warp widget-list">
+                           <h3 class="widget-title">归档</h3>
+                       </div>
+                   </div>
                 </aside>
                 <section>{% block main %} {% endblock %}</section>
             </div>

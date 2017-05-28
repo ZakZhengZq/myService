@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9a1432-cd08-4236-b651-f5d1d95f3c46" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/photo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/s-left.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_body.css" afterPath="$PROJECT_DIR$/static/css/blog_base_body.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_body.css.map" afterPath="$PROJECT_DIR$/static/css/blog_base_body.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_body.scss" afterPath="$PROJECT_DIR$/static/css/blog_base_body.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/b_base/b_base_sidebar.js" afterPath="$PROJECT_DIR$/static/js/b_base/b_base_sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_inner.css" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_inner.css.map" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_inner.scss" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/b_base.html" afterPath="$PROJECT_DIR$/views/b_base.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,8 +36,8 @@
       <file leaf-file-name="b_base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/b_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="154" column="17" lean-forward="true" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
+            <state relative-caret-position="430">
+              <caret line="193" column="71" lean-forward="false" selection-start-line="193" selection-start-column="71" selection-end-line="193" selection-end-column="71" />
               <folding>
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -49,6 +47,7 @@
                 <element signature="n#span#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#span#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#span#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,8 +56,32 @@
       <file leaf-file-name="blog_base_inner.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="124" column="35" lean-forward="true" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="35" />
+              <folding>
+                <element signature="e#465#751#0" expanded="false" />
+                <element signature="e#815#898#0" expanded="false" />
+                <element signature="e#1246#1780#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog_base_sidebar.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/blog_base_sidebar.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2247">
+              <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="51" selection-end-column="167" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog_base_body.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/blog_base_body.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="124" column="31" lean-forward="false" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -172,21 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="myService">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,12 +289,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog_base_sidebar.scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -306,9 +310,23 @@
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="blog_base_inner.scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
+              <option name="myItemId" value="myService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-3.3.7-dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -325,25 +343,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog_base_body.scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="bootstrap-3.3.7-dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -367,6 +367,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="myService">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,19 +396,19 @@
     <property name="last_opened_file_path" value="E:/git/Git/bin/git.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WSWorkSpace\myService\static\images" />
+      <recent name="E:\WSWorkSpace\myService\static" />
+      <recent name="E:\WSWorkSpace\myService\static\css" />
+      <recent name="E:\WSWorkSpace\myService\static\css\icon_font" />
+      <recent name="E:\WSWorkSpace\myService\static\fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\WSWorkSpace\myService\static\css" />
       <recent name="E:\WSWorkSpace\myService\static\images" />
       <recent name="E:\WSWorkSpace\myService\static\fonts" />
       <recent name="E:\WSWorkSpace\myService" />
       <recent name="E:\WSWorkSpace\myService\static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\WSWorkSpace\myService\static" />
-      <recent name="E:\WSWorkSpace\myService\static\css" />
-      <recent name="E:\WSWorkSpace\myService\static\css\icon_font" />
-      <recent name="E:\WSWorkSpace\myService\static\fonts" />
-      <recent name="E:\WSWorkSpace\myService\static\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -515,11 +530,12 @@
       <workItem from="1495758438755" duration="21737000" />
       <workItem from="1495808226587" duration="4901000" />
       <workItem from="1495852080921" duration="15294000" />
+      <workItem from="1495956517090" duration="20532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223413000" />
+    <option name="totallyTimeSpent" value="243945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -685,13 +701,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/blog_base_sidebar.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/blog_base_sidebar.css">
@@ -767,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-147">
           <caret line="98" column="54" lean-forward="false" selection-start-line="98" selection-start-column="54" selection-end-line="98" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,15 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -799,30 +805,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/blog_base_sidebar.scss">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="51" selection-end-column="167" />
+        <state relative-caret-position="210">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/blog_base_body.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="126" column="18" lean-forward="true" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
+        <state relative-caret-position="185">
+          <caret line="124" column="31" lean-forward="false" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/blog_base_sidebar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2247">
+          <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="51" selection-end-column="167" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/b_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="154" column="17" lean-forward="true" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
+        <state relative-caret-position="430">
+          <caret line="193" column="71" lean-forward="false" selection-start-line="193" selection-start-column="71" selection-end-line="193" selection-end-column="71" />
           <folding>
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -832,15 +845,20 @@
             <element signature="n#span#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#span#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#span#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#aside#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="374">
+          <caret line="124" column="35" lean-forward="true" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="35" />
+          <folding>
+            <element signature="e#465#751#0" expanded="false" />
+            <element signature="e#815#898#0" expanded="false" />
+            <element signature="e#1246#1780#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

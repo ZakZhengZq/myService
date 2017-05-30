@@ -63,3 +63,18 @@ var wg=new Vue({
         }
     }
 });
+
+// 注册
+Vue.component('child', {
+    // 声明 props
+    props: ['message'],
+    // 同样也可以在 vm 实例中像 “this.message” 这样使用
+    template: '<span>{{ message }}</span>'
+})
+// 创建根实例
+new Vue({
+    el: '#app',
+    data: {
+        parentMsg: '父组件内容'
+    }
+})

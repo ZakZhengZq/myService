@@ -139,7 +139,6 @@
                                            </a>
                                        </div>
                                        <div class="item-inner">
-
                                            <p class="item-category"><a class="article-category-link" v-bind:href=item.category_href v-text="item.category"></a></p>
                                            <p class="item-title"><a v-bind:href=item.title_href class="title" v-text="item.title"></a></p>
                                            <p class="item-author" v-text="item.author"></p>
@@ -171,12 +170,13 @@
                                </ul>
                            </div>
                        </div>
-                       <script src="/static/js/vue.min.js"></script>
-                       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-                       <script src="/static/js/b_base/base_body_innerdata.js"></script>
+
                    </div>
                 </aside>
                 <section>{% block main %} {% endblock %}</section>
+                <script src="/static/js/vue.min.js"></script>
+                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+                <script src="/static/js/b_base/base_body_innerdata.js"></script>
             </div>
         </div>
         <footer role="contentinfo">

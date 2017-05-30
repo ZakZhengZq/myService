@@ -141,3 +141,15 @@ div.widget-permes{
   &:before{content: "(";}
   &:after{content: ")";}
 }
+
+.articles-years{
+  padding: 18px 30px 17px;
+  font-size: 16px;
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
+.articles{
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+}

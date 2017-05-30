@@ -5,7 +5,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_inner.css" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_inner.css.map" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_inner.scss" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/b_base/base_body_innerdata.js" afterPath="$PROJECT_DIR$/static/js/b_base/base_body_innerdata.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/b_base.html" afterPath="$PROJECT_DIR$/views/b_base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/hello.html" afterPath="$PROJECT_DIR$/views/hello.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,8 +40,8 @@
       <file leaf-file-name="b_base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/b_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="176" column="61" lean-forward="true" selection-start-line="176" selection-start-column="61" selection-end-line="176" selection-end-column="61" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -50,9 +53,32 @@
                 <element signature="n#span#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#span#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#header#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#aside#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#footer#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/hello.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_body_innerdata.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/b_base/base_body_innerdata.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-54">
+              <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#40#0" expanded="false" />
+                <element signature="e#56#529#0" expanded="false" />
+                <element signature="e#548#1014#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -61,40 +87,18 @@
       <file leaf-file-name="blog_base_inner.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_base_inner.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hello.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/hello.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base_body_innerdata.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/b_base/base_body_innerdata.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="492">
+              <caret line="153" column="19" lean-forward="false" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="19" />
               <folding>
-                <element signature="e#0#40#0" expanded="false" />
+                <element signature="e#629#915#0" expanded="false" />
+                <element signature="e#979#1062#0" expanded="false" />
+                <element signature="e#1077#1394#0" expanded="false" />
+                <element signature="e#1410#1944#0" expanded="false" />
+                <element signature="e#1991#2027#0" expanded="false" />
+                <element signature="e#2050#2068#0" expanded="false" />
+                <element signature="e#2077#2265#0" expanded="false" />
+                <element signature="e#2278#2806#0" expanded="false" />
+                <element signature="e#2827#2881#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -119,8 +123,8 @@
       <list>
         <option value="package_json" />
         <option value="HTML File" />
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -181,11 +185,12 @@
         <option value="$PROJECT_DIR$/static/js/b_base/b_base_sidebar.js" />
         <option value="$PROJECT_DIR$/views/base.html" />
         <option value="$PROJECT_DIR$/static/acti.json" />
-        <option value="$PROJECT_DIR$/static/js/b_base/base_body_innerdata.js" />
-        <option value="$PROJECT_DIR$/views/b_base.html" />
-        <option value="$PROJECT_DIR$/static/css/blog_base_inner.scss" />
+        <option value="$PROJECT_DIR$/static/css/test.scss" />
         <option value="$PROJECT_DIR$/static/css/blog_base_inner.css" />
         <option value="$PROJECT_DIR$/views/hello.html" />
+        <option value="$PROJECT_DIR$/static/css/blog_base_inner.scss" />
+        <option value="$PROJECT_DIR$/views/b_base.html" />
+        <option value="$PROJECT_DIR$/static/js/b_base/base_body_innerdata.js" />
       </list>
     </option>
   </component>
@@ -223,7 +228,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="myService">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -322,51 +340,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog_base_inner.scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="myService">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="E:/nodejs/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -518,11 +501,16 @@
       <workItem from="1496154595417" duration="234000" />
       <workItem from="1496154857426" duration="1400000" />
       <workItem from="1496157682298" duration="1127000" />
+      <workItem from="1496160048003" duration="1345000" />
+      <workItem from="1496162287733" duration="1125000" />
+      <workItem from="1496166307375" duration="313000" />
+      <workItem from="1496170882455" duration="1087000" />
+      <workItem from="1496173176588" duration="459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273742000" />
+    <option name="totallyTimeSpent" value="278071000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -535,7 +523,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21561338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -566,7 +553,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/b_base2.css" />
     <entry file="file://$PROJECT_DIR$/static/css/iconfont.css" />
     <entry file="file://$PROJECT_DIR$/static/css/icon_font/iconfont.scss" />
     <entry file="file://$PROJECT_DIR$/index.html" />
@@ -621,13 +607,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/blog_base_sidebar.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/blog_base_sidebar.css">
@@ -747,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/vue/dist/vue.min.js" />
     <entry file="file://$PROJECT_DIR$/views/room.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -766,6 +745,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/test.scss" />
+    <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -787,20 +774,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="153" column="19" lean-forward="false" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="19" />
+          <folding>
+            <element signature="e#629#915#0" expanded="false" />
+            <element signature="e#979#1062#0" expanded="false" />
+            <element signature="e#1077#1394#0" expanded="false" />
+            <element signature="e#1410#1944#0" expanded="false" />
+            <element signature="e#1991#2027#0" expanded="false" />
+            <element signature="e#2050#2068#0" expanded="false" />
+            <element signature="e#2077#2265#0" expanded="false" />
+            <element signature="e#2278#2806#0" expanded="false" />
+            <element signature="e#2827#2881#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/b_base/base_body_innerdata.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="-54">
+          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
+            <element signature="e#56#529#0" expanded="false" />
+            <element signature="e#548#1014#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/b_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="176" column="61" lean-forward="true" selection-start-line="176" selection-start-column="61" selection-end-line="176" selection-end-column="61" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -812,7 +826,6 @@
             <element signature="n#span#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#span#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#header#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#aside#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -821,24 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/hello.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="80">
+          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
           <folding />
         </state>
       </provider>

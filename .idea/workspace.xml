@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="3b9a1432-cd08-4236-b651-f5d1d95f3c46" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_body.css" afterPath="$PROJECT_DIR$/static/css/blog_base_body.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_body.css.map" afterPath="$PROJECT_DIR$/static/css/blog_base_body.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_body.scss" afterPath="$PROJECT_DIR$/static/css/blog_base_body.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_inner.css" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_inner.css.map" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_inner.scss" afterPath="$PROJECT_DIR$/static/css/blog_base_inner.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/b_base/base_body_innerdata.js" afterPath="$PROJECT_DIR$/static/js/b_base/base_body_innerdata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/hello.html" afterPath="$PROJECT_DIR$/views/hello.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_sidebar.css" afterPath="$PROJECT_DIR$/static/css/blog_base_sidebar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_sidebar.scss" afterPath="$PROJECT_DIR$/static/css/blog_base_sidebar.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,8 +41,8 @@
       <file leaf-file-name="b_base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/b_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="176" column="61" lean-forward="false" selection-start-line="176" selection-start-column="61" selection-end-line="176" selection-end-column="61" />
+            <state relative-caret-position="246">
+              <caret line="119" column="34" lean-forward="false" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="34" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -58,32 +61,42 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="blog_base_inner.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+              <folding>
+                <element signature="e#936#1222#0" expanded="false" />
+                <element signature="e#1286#1369#0" expanded="false" />
+                <element signature="e#1384#1701#0" expanded="false" />
+                <element signature="e#1717#2251#0" expanded="false" />
+                <element signature="e#2298#2334#0" expanded="false" />
+                <element signature="e#2357#2375#0" expanded="false" />
+                <element signature="e#2384#2572#0" expanded="false" />
+                <element signature="e#2585#3113#0" expanded="false" />
+                <element signature="e#3134#3188#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog_base_body.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/blog_base_body.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="108" column="27" lean-forward="false" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="hello.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/hello.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
               <caret line="2" column="79" lean-forward="true" selection-start-line="2" selection-start-column="79" selection-end-line="2" selection-end-column="79" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_base_inner.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-              <folding>
-                <element signature="e#1004#1290#0" expanded="false" />
-                <element signature="e#1354#1437#0" expanded="false" />
-                <element signature="e#1452#1769#0" expanded="false" />
-                <element signature="e#1785#2319#0" expanded="false" />
-                <element signature="e#2366#2402#0" expanded="false" />
-                <element signature="e#2425#2443#0" expanded="false" />
-                <element signature="e#2452#2640#0" expanded="false" />
-                <element signature="e#2653#3181#0" expanded="false" />
-                <element signature="e#3202#3256#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -159,7 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/file_server.js" />
         <option value="$PROJECT_DIR$/detail.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/controller.js" />
@@ -195,10 +207,8 @@
         <option value="$PROJECT_DIR$/static/css/b_base.scss" />
         <option value="$PROJECT_DIR$/static/css/b_base.css" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/static/css/blog_base_sidebar.scss" />
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/controllers/index.js" />
-        <option value="$PROJECT_DIR$/static/css/blog_base_body.scss" />
         <option value="$PROJECT_DIR$/static/test.json" />
         <option value="$PROJECT_DIR$/static/static-files.js" />
         <option value="$PROJECT_DIR$/static/js/b_base/b_base_sidebar.js" />
@@ -210,6 +220,9 @@
         <option value="$PROJECT_DIR$/views/hello.html" />
         <option value="$PROJECT_DIR$/static/js/b_base/base_body_innerdata.js" />
         <option value="$PROJECT_DIR$/static/css/blog_base_inner.scss" />
+        <option value="$PROJECT_DIR$/static/css/blog_base_body.css" />
+        <option value="$PROJECT_DIR$/static/css/blog_base_sidebar.scss" />
+        <option value="$PROJECT_DIR$/static/css/blog_base_body.scss" />
       </list>
     </option>
   </component>
@@ -382,6 +395,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog_base_body.scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -547,12 +582,12 @@
       <workItem from="1496166307375" duration="313000" />
       <workItem from="1496170882455" duration="1087000" />
       <workItem from="1496173176588" duration="553000" />
-      <workItem from="1496145412578" duration="9167000" />
+      <workItem from="1496145412578" duration="11286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287332000" />
+    <option name="totallyTimeSpent" value="289451000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,13 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/blog_base_body.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="107" column="19" lean-forward="true" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/font-awesome.min.css" />
     <entry file="file://$PROJECT_DIR$/static/font-awesome/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -846,27 +874,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/blog_base_sidebar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="978">
-          <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="51" selection-end-column="167" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/blog_base_body.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="124" column="31" lean-forward="false" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/blog_base_body.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="107" column="18" lean-forward="true" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
+          <folding>
+            <marker date="1496160779000" expanded="true" signature="615:717" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="625:715" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="729:843" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="872:949" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="977:1028" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="1047:1182" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="1201:1331" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="1367:1394" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="1436:1519" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="1575:1602" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="1608:1751" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="1797:1982" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="2036:2057" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="2088:2167" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="2139:2165" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="2208:2399" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="2428:2514" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="2483:2512" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="2707:2902" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="2961:2986" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="3053:3080" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="3109:3408" ph="{...}" />
+            <marker date="1496160779000" expanded="true" signature="3443:3507" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -880,8 +924,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/b_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="176" column="61" lean-forward="false" selection-start-line="176" selection-start-column="61" selection-end-line="176" selection-end-column="61" />
+        <state relative-caret-position="246">
+          <caret line="119" column="34" lean-forward="false" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="34" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -901,19 +945,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/blog_base_inner.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        <state relative-caret-position="18">
+          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
-            <element signature="e#1004#1290#0" expanded="false" />
-            <element signature="e#1354#1437#0" expanded="false" />
-            <element signature="e#1452#1769#0" expanded="false" />
-            <element signature="e#1785#2319#0" expanded="false" />
-            <element signature="e#2366#2402#0" expanded="false" />
-            <element signature="e#2425#2443#0" expanded="false" />
-            <element signature="e#2452#2640#0" expanded="false" />
-            <element signature="e#2653#3181#0" expanded="false" />
-            <element signature="e#3202#3256#0" expanded="false" />
+            <element signature="e#936#1222#0" expanded="false" />
+            <element signature="e#1286#1369#0" expanded="false" />
+            <element signature="e#1384#1701#0" expanded="false" />
+            <element signature="e#1717#2251#0" expanded="false" />
+            <element signature="e#2298#2334#0" expanded="false" />
+            <element signature="e#2357#2375#0" expanded="false" />
+            <element signature="e#2384#2572#0" expanded="false" />
+            <element signature="e#2585#3113#0" expanded="false" />
+            <element signature="e#3134#3188#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/blog_base_sidebar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/blog_base_body.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="108" column="27" lean-forward="false" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>

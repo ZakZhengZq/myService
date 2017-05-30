@@ -23,8 +23,8 @@ body {
 @media screen and (min-width: 600px) {
   .site {
     margin: 0 auto;
-    max-width: 960px;
-    max-width: 68.571428571rem;
+    max-width: 1120px;
+    max-width: 80rem;
     overflow: hidden; } }
 #particles {
   position: absolute;
@@ -88,7 +88,10 @@ nav {
   nav .container-fluid .navbar-header a {
     color: #757575;
     font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
+    nav .container-fluid #example-navbar-collapse ul {
+      margin-left: 150px; } }
+  @media (min-width: 868px) and (max-width: 968px) {
     nav .container-fluid #example-navbar-collapse ul {
       margin-left: 100px; } }
   nav .container-fluid #example-navbar-collapse ul li {
@@ -105,8 +108,8 @@ footer[role="contentinfo"] {
   font-size: 12px;
   font-size: 0.857142857rem;
   line-height: 2;
-  max-width: 960px;
-  max-width: 68.571428571rem;
+  max-width: 1120px;
+  max-width: 80rem;
   margin-top: 24px;
   margin-top: 1.714285714rem;
   margin-left: auto;

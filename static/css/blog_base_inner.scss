@@ -3,10 +3,7 @@
 }
 
 div[rel="blog_base_inner"]{
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  width: 100%;
   padding-left:  264px;
   background: url("/static/images/s-left.png") repeat-y left 0;
   &:before,&:after{
@@ -27,6 +24,7 @@ div[rel="blog_base_inner"]{
       background: url("/static/images/s-left.png") repeat-y left 0;
     }
     section{
+      background-color: #fff;
       float: right;
       width: 100%;
       -webkit-box-sizing: border-box;

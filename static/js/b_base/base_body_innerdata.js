@@ -64,17 +64,64 @@ var wg=new Vue({
     }
 });
 
-// 注册
-Vue.component('child', {
-    // 声明 props
-    props: ['message'],
-    // 同样也可以在 vm 实例中像 “this.message” 这样使用
-    template: '<span>{{ message }}</span>'
-})
-// 创建根实例
+Vue.component('myarticle', {
+    props: ['item'],
+    template: ' \
+            <section>\
+                <div class="articles-years">\
+                  <a href="/archives/2017" class="archive-year" v-text="item.date"><i class="icon fa fa-calendar-o"></i>2017</a>\
+                </div>\
+                <div class="articles" v-for="item2 in item.test">\
+                    <div class="article-row">\
+                        <article class="article article-summary">\
+                            <div class="article-summary-inner">\
+                                <a href="/blog/2017/02/10/why-rax/" class="_thumbnail">\
+                                    <span style="background-image:url(//img.alicdn.com/tps/TB1LxebPVXXXXaHXpXXXXXXXXXX-900-500.png)" alt="Why Rax?" class="thumbnail-image"></span>\
+                                </a>\
+                                <div class="article-meta">\
+                                    <p class="category"><a class="article-category-link" href="/categories/无线开发/" v-text="item2.article1.name"></a></p>\
+                                    <p class="date"><time datetime="2017-02-10T10:17:45.000Z" itemprop="datePublished">2017-02-10</time></p>\
+                                </div>\
+                                <h2 class="article-title">\
+                                    <a href="/blog/2017/02/10/why-rax/" class="title">Why Rax?</a>\
+                                </h2>\
+                                <p class="article-excerpt">https://github.com/alibaba/rax 从今年 1 月 12 日在 Weex Conf 上宣布 Rax 开源，至今已过去一个月左右的时间，这段时间里，Rax 拿到 2400+ 的 star, 我们深知这对一个开源产品来说是微不足道的，但是从中可以发现的是「前端或者 Weex 社区对于类 React 的技术方案是有很大需求的」。同时，结合近期 GitHub 上的相关 is</p>\
+                            </div>\
+                        </article>\
+                        <article class="article article-summary">\
+                            <div class="article-summary-inner">\
+                                <a href="/blog/2017/02/10/why-rax/" class="_thumbnail">\
+                                    <span style="background-image:url(//img.alicdn.com/tps/TB1LxebPVXXXXaHXpXXXXXXXXXX-900-500.png)" alt="Why Rax?" class="thumbnail-image"></span>\
+                                </a>\
+                                <div class="article-meta">\
+                                    <p class="category"><a class="article-category-link" href="/categories/无线开发/" v-text="item2.article2.name">无线开发</a></p>\
+                                    <p class="date"><time datetime="2017-02-10T10:17:45.000Z" itemprop="datePublished">2017-02-10</time></p>\
+                                </div>\
+                                <h2 class="article-title">\
+                                    <a href="/blog/2017/02/10/why-rax/" class="title">Why Rax?</a>\
+                                </h2>\
+                                <p class="article-excerpt">https://github.com/alibaba/rax 从今年 1 月 12 日在 Weex Conf 上宣布 Rax 开源，至今已过去一个月左右的时间，这段时间里，Rax 拿到 2400+ 的 star, 我们深知这对一个开源产品来说是微不足道的，但是从中可以发现的是「前端或者 Weex 社区对于类 React 的技术方案是有很大需求的」。同时，结合近期 GitHub 上的相关 is</p>\
+                            </div>\
+                        </article>\
+                    </div>\
+                </div>\
+            </section>\
+                '
+});
+
 new Vue({
-    el: '#app',
+    el: '#articleId',
     data: {
-        parentMsg: '父组件内容'
+        articleInfor: [
+                { date: '2017年5月' ,test:[
+                    {article1:{name:'article1'}, article2:{name:'article2'}},
+                    {article1:{name:'article3'}, article2:{name:'article4'}}
+                ]},
+
+                { date: '2016年6月' ,test:[
+                    {article1:{name:'article1'}, article2:{name:'article2'}},
+                    {article1:{name:'article3'}, article2:{name:'article4'}}
+                ]}
+        ]
     }
-})
+});

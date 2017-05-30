@@ -1,8 +1,5 @@
 {% extends "b_base.html" %} {% block main %}
-<section>
-    <div class="article">
-        <div class="articles-years">2017年5月</div>
-        <div class="articles"></div>
+    <div class="article" id="articleId">
+        <myarticle v-for="item in articleInfor" v-bind:item="item"></myarticle>
     </div>
-</section>
 {% endblock %}

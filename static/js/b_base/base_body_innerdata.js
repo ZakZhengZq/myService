@@ -125,3 +125,18 @@ new Vue({
         ]
     }
 });
+
+new Vue({
+    el:'#pagination',
+    data: {
+        pagenum:5
+    },
+    methods: {
+        select: function (event) {
+            // `this` 在方法里指当前 Vue 实例
+            console.log(this.$refs);
+            this.$refs.ref3.class="";
+
+        }
+    }
+});

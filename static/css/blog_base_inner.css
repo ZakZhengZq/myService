@@ -183,6 +183,27 @@ div.widget-permes {
       position: relative;
       margin-bottom: 1em;
       padding-bottom: 55.71%; }
+    .article-summary .article-summary-inner .article-title {
+      margin-bottom: 10px;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.5em;
+      word-wrap: break-word;
+      overflow: hidden;
+      height: 33px; }
+      .article-summary .article-summary-inner .article-title a {
+        -webkit-transition: color 0.3s ease-in;
+        -moz-transition: color 0.3s ease-in;
+        -ms-transition: color 0.3s ease-in;
+        transition: color 0.3s ease-in;
+        color: #444; }
+    .article-summary .article-summary-inner .article-excerpt {
+      position: relative;
+      color: #aaa;
+      font-size: 16px;
+      line-height: 1.6em;
+      overflow: hidden;
+      height: 6.4em; }
 
 .thumbnail-image {
   display: block;
@@ -198,5 +219,53 @@ div.widget-permes {
   -moz-transition: opacity 0.3s ease-in;
   -ms-transition: opacity 0.3s ease-in;
   transition: opacity 0.3s ease-in; }
+
+.article-meta {
+  height: 1.6em;
+  line-height: 1.6em;
+  overflow: hidden; }
+  .article-meta a {
+    text-decoration: none;
+    color: #62bbc3; }
+  .article-meta:before, .article-meta:after {
+    content: "";
+    display: table; }
+  .article-meta:after {
+    clear: both; }
+  .article-meta p {
+    float: left;
+    color: #bbb;
+    margin-right: 6px; }
+
+.article-title {
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: -1px;
+  color: #555;
+  line-height: 1.3em;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  transition: color 0.2s;
+  margin-bottom: 10px; }
+
+ul._pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+  ul._pagination li {
+    display: inline; }
+    ul._pagination li a {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px; }
+      ul._pagination li a._active {
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px; }
+      ul._pagination li a:hover:not(.active) {
+        background-color: #ddd; }
 
 /*# sourceMappingURL=blog_base_inner.css.map */

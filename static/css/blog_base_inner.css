@@ -265,7 +265,7 @@ ul._pagination {
         background-color: #4CAF50;
         color: white;
         border-radius: 5px; }
-      ul._pagination li a:hover:not(.active) {
+      ul._pagination li a:hover:not(._active) {
         background-color: #ddd; }
 
 /*# sourceMappingURL=blog_base_inner.css.map */

@@ -5,7 +5,7 @@
     <nav id="pagination">
         <ul class="_pagination">
             <li><a href="#">«</a></li>
-            <li v-for="n in pagenum"><a v-bind:ref="'ref'+n" class="_active" v-on:click="select" v-text="n">1</a></li>
+            <li v-for="n in pagenum"><a v-bind:id="'ref'+n" name="pana" class="" v-on:click="select" v-text="n">1</a></li>
         </ul>
     </nav>
 {% endblock %}

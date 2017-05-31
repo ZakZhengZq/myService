@@ -290,8 +290,11 @@ ul._pagination {
         color: white;
         border-radius: 5px;
       }
-      &:hover:not(.active) {background-color: #ddd;}
+      &:hover {
+        &:not(._active) {
+          background-color: #ddd;
+        }
+      }
     }
   }
 }
-

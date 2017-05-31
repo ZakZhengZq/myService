@@ -134,9 +134,14 @@ new Vue({
     methods: {
         select: function (event) {
             // `this` 在方法里指当前 Vue 实例
-            console.log(this.$refs);
-            this.$refs.ref3.class="";
-
+            //console.log(document.getElementsByName('pana'));
+            let arr=document.getElementsByName('pana');
+            for (let i in arr) {
+                if (!arr.hasOwnProperty(i)){continue}
+                //console.log(i);
+                arr[i].className='';
+            }
+            document.getElementById(event.target.id).className='_active';
         }
     }
 });

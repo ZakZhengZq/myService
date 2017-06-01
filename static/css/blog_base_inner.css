@@ -267,5 +267,9 @@ ul._pagination {
         border-radius: 5px; }
       ul._pagination li a:hover:not(._active) {
         background-color: #ddd; }
+    ul._pagination li span {
+      color: black;
+      float: left;
+      padding: 8px 5px; }
 
 /*# sourceMappingURL=blog_base_inner.css.map */

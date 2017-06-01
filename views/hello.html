@@ -4,8 +4,13 @@
     </div>
     <nav id="pagination">
         <ul class="_pagination">
-            <li><a href="#">«</a></li>
-            <li v-for="n in pagenum"><a v-bind:id="'ref'+n" name="pana" class="" v-on:click="select" v-text="n">1</a></li>
+            <li v-if="left"><a href="#">«</a></li>
+            <li><a id="1" name="pana" class="" v-on:click="select">1</a></li>
+            <li v-if="ellipsis1"><span>...</span></li>
+            <li v-for="item in staticNum" v-if="item.display"><a v-bind:id="item.id" name="pana" class="" v-on:click="select" v-text="item.val">1</a></li>
+            <li v-if="ellipsis2"><span>...</span></li>
+            <li v-if="lastNum"><a v-bind:id="7" name="pana" class="" v-on:click="select" v-text="pageNum">1</a></li>
+            <li v-if="right"><a href="#">»</a></li>
         </ul>
     </nav>
 {% endblock %}

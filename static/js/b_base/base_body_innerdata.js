@@ -136,7 +136,8 @@ new Vue({
         ellipsis2:false,
         left:false,
         right:false,
-        lastNum:false
+        lastNum:false,
+        preSec:1
     },
     mounted:function () {
         document.getElementById("1").className='_active';
@@ -155,6 +156,7 @@ new Vue({
     },
     methods: {
         select: function (event) {
+            this.preSec=parseInt(event.target.id);
             let arr=document.getElementsByName('pana');
             for (let i in arr) {
                 if (!arr.hasOwnProperty(i)){continue}
@@ -225,6 +227,14 @@ new Vue({
             for(let i=0; i<5;i++){
                     this.staticNum[i].display=false;
             }
+        },
+        previous:function () {
+            if(this.preSec-1>0)
+            document.getElementById(this.preSec-1+'').click()
+        },
+        theNext:function () {
+            if(this.preSec+1<=this.pageNum)
+                document.getElementById(this.preSec+1+'').click()
         }
     }
 });

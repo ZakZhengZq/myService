@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAe;EACb,KAAK,EAAE,IAAI;EACX,aAAa,EAAE,IAAI;EACnB,YAAY,EAAE,IAAI;EAClB,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;;AAEnB,YAAY;EAAC,aAAa,EAAE,iBAAiB;EAAE,cAAc,EAAE,IAAI",
+"sources": ["blog_base_chat.scss"],
+"names": [],
+"file": "blog_base_chat.css"
+}

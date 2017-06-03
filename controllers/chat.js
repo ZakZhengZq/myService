@@ -35,7 +35,7 @@ module.exports = {
             image: index % 10
         };
         let value = Buffer.from(JSON.stringify(user)).toString('base64');
-        console.log(`Set cookie value: ${value}`);
+        //console.log(`Set cookie value: ${value}`);
         ctx.cookies.set('name', value);
         ctx.response.redirect('/ws/chat');
     },

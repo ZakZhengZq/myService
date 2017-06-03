@@ -59,7 +59,7 @@ function init_ws(server, onConnection, onMessage, onClose, onError) {
         // 绑定WebSocketServer对象:
         ws.wss = wss;
         onConnection.apply(ws);
-        console.log('cookie--->' + user);
+        //console.log('cookie--->' + user);
     });
     console.log('WebSocketServer was attached.');
     return wss;

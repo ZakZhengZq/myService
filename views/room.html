@@ -78,11 +78,50 @@
         </div>
     </div>
     <div id="leave">
-        <ul>
-            <li is="liuyan-list" v-for="leaveText in leaveTexts" v-bind:itemText="leaveText"
-                v-on:remove="todos.splice(index, 1)"></li>
-        </ul>
-        <input v-model="leaveText" v-on:keyup.enter="addNewText" placeholder="!@#$%^&*.....">
+        <leave-item v-for="item in leaveTexts" v-bind:itemtext="item"></leave-item>
+        <!--<input v-model="leaveText" v-on:keyup.enter="addNewText" placeholder="!@#$%^&*.....">-->
+        <div id='pad-wrapper'>
+            <div id="editparent">
+                <div id='editControls' class='span12'>
+                    <div class='btn-group'>
+                        <a class='btn' data-role='undo' href='#'><i class='fa fa-undo'></i></a>
+                        <a class='btn' data-role='redo' href='#'><i class='fa fa-repeat'></i></a>
+                    </div>
+                    <div class='btn-group'>
+                        <a class='btn' data-role='bold'><b>Bold</b></a>
+                        <a class='btn' data-role='italic' href='#'><em>Italic</em></a>
+                        <a class='btn' data-role='underline' href='#'><u><b>U</b></u></a>
+                        <a class='btn' data-role='strikeThrough' href='#'><strike>abc</strike></a>
+                    </div>
+                    <div class='btn-group'>
+                        <a class='btn' data-role='justifyLeft' href='#'><i class='fa fa-align-left'></i></a>
+                        <a class='btn' data-role='justifyCenter' href='#'><i class='fa fa-align-center'></i></a>
+                        <a class='btn' data-role='justifyRight' href='#'><i class='fa fa-align-right'></i></a>
+                        <a class='btn' data-role='justifyFull' href='#'><i class='fa fa-align-justify'></i></a>
+                    </div>
+                    <div class='btn-group'>
+                        <a class='btn' data-role='indent' href='#'><i class='fa fa-indent'></i></a>
+                        <a class='btn' data-role='outdent' href='#'><i class='fa fa-indent'></i></a>
+                    </div>
+                    <div class='btn-group'>
+                        <a class='btn' data-role='insertUnorderedList' href='#'><i class='fa fa-list'></i></a>
+                        <a class='btn' data-role='insertOrderedList' href='#'><i class='fa fa-list-ol'></i></a>
+                    </div>
+                    <div class='btn-group'>
+                        <a class='btn' data-role='h1' href='#'>h<sup>1</sup></a>
+                        <a class='btn' data-role='h2' href='#'>h<sup>2</sup></a>
+                        <a class='btn' data-role='p' href='#'>p</a>
+                    </div>
+                    <div class='btn-group'>
+                        <a class='btn' data-role='subscript' href='#'><i class='icon-subscript'></i></a>
+                        <a class='btn' data-role='superscript' href='#'><i class='icon-superscript'></i></a>
+                    </div>
+                </div>
+                <div id='editor' class='span12' style='' contenteditable>
+                    <p>say something...</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

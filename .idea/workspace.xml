@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9a1432-cd08-4236-b651-f5d1d95f3c46" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/photo2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_chat.css" afterPath="$PROJECT_DIR$/static/css/blog_base_chat.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_chat.css.map" afterPath="$PROJECT_DIR$/static/css/blog_base_chat.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/blog_base_chat.scss" afterPath="$PROJECT_DIR$/static/css/blog_base_chat.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/b_base/b_base_chat.js" afterPath="$PROJECT_DIR$/static/js/b_base/b_base_chat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/b_base.html" afterPath="$PROJECT_DIR$/views/b_base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/room.html" afterPath="$PROJECT_DIR$/views/room.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket/init_ws.js" afterPath="$PROJECT_DIR$/websocket/init_ws.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,22 +35,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="room.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="room.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/room.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="107" column="101" lean-forward="false" selection-start-line="107" selection-start-column="101" selection-end-line="107" selection-end-column="101" />
+            <state relative-caret-position="200">
+              <caret line="82" column="29" lean-forward="false" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b_base_chat.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/b_base/b_base_chat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="139" column="13" lean-forward="false" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
+              <folding>
+                <element signature="n#!!doc;n#addToUserList#0" expanded="false" />
+                <element signature="n#!!block;n#addToUserList#0" expanded="false" />
+                <element signature="n#!!block;n#removeFromUserList#0" expanded="false" />
+                <element signature="n#!!block;n#addMessage#0" expanded="false" />
+                <element signature="e#711#798#0" expanded="false" />
+                <element signature="e#830#911#0" expanded="false" />
+                <element signature="e#1782#2071#0" expanded="false" />
+                <element signature="e#2111#2171#0" expanded="false" />
+                <element signature="e#2213#2464#0" expanded="false" />
+                <element signature="e#3284#4119#0" expanded="false" />
+                <marker date="1496512846000" expanded="true" signature="2590:3187" ph="..." />
+                <marker date="1496512846000" expanded="true" signature="2590:3190" ph="..." />
+                <marker date="1496512846000" expanded="true" signature="2717:3166" ph="..." />
+                <marker date="1496512846000" expanded="true" signature="2762:2835" ph="..." />
+                <marker date="1496512846000" expanded="true" signature="2762:2964" ph="..." />
+                <marker date="1496512846000" expanded="true" signature="3009:3079" ph="..." />
+                <marker date="1496512846000" expanded="true" signature="3009:3103" ph="..." />
+                <marker date="1496512846000" expanded="true" signature="3009:3138" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog_base_chat.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/blog_base_chat.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="804">
+              <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+              <folding>
+                <element signature="e#428#556#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -62,7 +101,7 @@
       <file leaf-file-name="b_base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/b_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-688">
+            <state relative-caret-position="-551">
               <caret line="93" column="21" lean-forward="true" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -82,82 +121,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b_base_chat.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/b_base/b_base_chat.js">
+      <file leaf-file-name="init_ws.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/websocket/init_ws.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="119" column="22" lean-forward="true" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
-              <folding>
-                <element signature="n#!!doc;n#addToUserList#0" expanded="false" />
-                <element signature="n#!!block;n#addToUserList#0" expanded="false" />
-                <element signature="n#!!block;n#removeFromUserList#0" expanded="false" />
-                <element signature="n#!!block;n#addMessage#0" expanded="false" />
-                <element signature="e#691#778#0" expanded="false" />
-                <element signature="e#810#891#0" expanded="false" />
-                <element signature="e#989#1576#0" expanded="false" />
-                <element signature="e#1610#1899#0" expanded="false" />
-                <element signature="e#1939#1999#0" expanded="false" />
-                <element signature="e#2041#2292#0" expanded="false" />
-                <marker date="1496501766000" expanded="true" signature="2418:3003" ph="..." />
-                <marker date="1496501766000" expanded="true" signature="2418:3006" ph="..." />
-                <marker date="1496501766000" expanded="true" signature="2545:2982" ph="..." />
-                <marker date="1496501766000" expanded="true" signature="2590:2663" ph="..." />
-                <marker date="1496501766000" expanded="true" signature="2590:2792" ph="..." />
-                <marker date="1496501766000" expanded="true" signature="2837:2907" ph="..." />
-                <marker date="1496501766000" expanded="true" signature="2837:2916" ph="..." />
-                <marker date="1496501766000" expanded="true" signature="2837:2954" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_base_chat.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/blog_base_chat.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="69" column="9" lean-forward="false" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-              <folding>
-                <element signature="e#428#556#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chat.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/chat.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+            <state relative-caret-position="524">
+              <caret line="61" column="10" lean-forward="false" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/hello.html">
+      <file leaf-file-name="parseUser.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cookie/parseUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="66" />
-              <folding>
-                <element signature="e#4715#9889#0" expanded="false" />
-                <element signature="e#9436#9561#0" expanded="false" />
-                <marker date="1496481437000" expanded="false" signature="992:4122" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="1038:1192" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="1259:4098" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="1306:4074" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="1373:2674" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="1438:2638" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="1527:1746" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="1579:1661" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="1806:2141" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="2201:2340" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="2741:4046" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="2806:4010" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="2895:3114" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="2947:3029" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="3174:3513" ph="..." />
-                <marker date="1496481437000" expanded="true" signature="3573:3712" ph="..." />
-              </folding>
+            <state relative-caret-position="280">
+              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -234,10 +213,10 @@
         <option value="$PROJECT_DIR$/static/js/b_base/base_body_innerdata.js" />
         <option value="$PROJECT_DIR$/views/hello.html" />
         <option value="$PROJECT_DIR$/websocket/init_ws.js" />
-        <option value="$PROJECT_DIR$/static/js/b_base/b_base_chat.js" />
         <option value="$PROJECT_DIR$/views/b_base.html" />
         <option value="$PROJECT_DIR$/static/css/blog_base_chat.scss" />
         <option value="$PROJECT_DIR$/views/room.html" />
+        <option value="$PROJECT_DIR$/static/js/b_base/b_base_chat.js" />
       </list>
     </option>
   </component>
@@ -660,12 +639,12 @@
       <workItem from="1496324143542" duration="60000" />
       <workItem from="1496350495563" duration="11995000" />
       <workItem from="1496467889171" duration="2625000" />
-      <workItem from="1496472768529" duration="17990000" />
+      <workItem from="1496472768529" duration="24374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339811000" />
+    <option name="totallyTimeSpent" value="346195000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -678,7 +657,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21561338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -711,7 +689,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/a_base.css" />
     <entry file="file://$PROJECT_DIR$/static/css/a_base.scss" />
     <entry file="file://$PROJECT_DIR$/static/css/font_icon/demo.css" />
     <entry file="file://$PROJECT_DIR$/static/css/font_icon/iconfont.css" />
@@ -719,13 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="775">
           <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -892,14 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cookie/parseUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-265">
@@ -947,6 +909,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/font-awesome/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/font-awesome/HELP-US-OUT.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/hello.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -974,93 +967,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/views/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="700">
+          <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket/init_ws.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="61" column="10" lean-forward="false" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/font-awesome/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/font-awesome/HELP-US-OUT.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/blog_base_chat.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="69" column="9" lean-forward="false" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-          <folding>
-            <element signature="e#428#556#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/b_base/b_base_chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="119" column="22" lean-forward="true" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc;n#addToUserList#0" expanded="false" />
-            <element signature="n#!!block;n#addToUserList#0" expanded="false" />
-            <element signature="n#!!block;n#removeFromUserList#0" expanded="false" />
-            <element signature="n#!!block;n#addMessage#0" expanded="false" />
-            <element signature="e#691#778#0" expanded="false" />
-            <element signature="e#810#891#0" expanded="false" />
-            <element signature="e#989#1576#0" expanded="false" />
-            <element signature="e#1610#1899#0" expanded="false" />
-            <element signature="e#1939#1999#0" expanded="false" />
-            <element signature="e#2041#2292#0" expanded="false" />
-            <marker date="1496501766000" expanded="true" signature="2418:3003" ph="..." />
-            <marker date="1496501766000" expanded="true" signature="2418:3006" ph="..." />
-            <marker date="1496501766000" expanded="true" signature="2545:2982" ph="..." />
-            <marker date="1496501766000" expanded="true" signature="2590:2663" ph="..." />
-            <marker date="1496501766000" expanded="true" signature="2590:2792" ph="..." />
-            <marker date="1496501766000" expanded="true" signature="2837:2907" ph="..." />
-            <marker date="1496501766000" expanded="true" signature="2837:2916" ph="..." />
-            <marker date="1496501766000" expanded="true" signature="2837:2954" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/b_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-688">
+        <state relative-caret-position="-551">
           <caret line="93" column="21" lean-forward="true" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1079,21 +1004,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-941">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/init_ws.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="61" column="10" lean-forward="false" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cookie/parseUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/blog_base_chat.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+          <folding>
+            <element signature="e#428#556#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/room.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="107" column="101" lean-forward="false" selection-start-line="107" selection-start-column="101" selection-end-line="107" selection-end-column="101" />
+        <state relative-caret-position="200">
+          <caret line="82" column="29" lean-forward="false" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
           <folding>
             <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/b_base/b_base_chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="139" column="13" lean-forward="false" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc;n#addToUserList#0" expanded="false" />
+            <element signature="n#!!block;n#addToUserList#0" expanded="false" />
+            <element signature="n#!!block;n#removeFromUserList#0" expanded="false" />
+            <element signature="n#!!block;n#addMessage#0" expanded="false" />
+            <element signature="e#711#798#0" expanded="false" />
+            <element signature="e#830#911#0" expanded="false" />
+            <element signature="e#1782#2071#0" expanded="false" />
+            <element signature="e#2111#2171#0" expanded="false" />
+            <element signature="e#2213#2464#0" expanded="false" />
+            <element signature="e#3284#4119#0" expanded="false" />
+            <marker date="1496512846000" expanded="true" signature="2590:3187" ph="..." />
+            <marker date="1496512846000" expanded="true" signature="2590:3190" ph="..." />
+            <marker date="1496512846000" expanded="true" signature="2717:3166" ph="..." />
+            <marker date="1496512846000" expanded="true" signature="2762:2835" ph="..." />
+            <marker date="1496512846000" expanded="true" signature="2762:2964" ph="..." />
+            <marker date="1496512846000" expanded="true" signature="3009:3079" ph="..." />
+            <marker date="1496512846000" expanded="true" signature="3009:3103" ph="..." />
+            <marker date="1496512846000" expanded="true" signature="3009:3138" ph="..." />
           </folding>
         </state>
       </provider>

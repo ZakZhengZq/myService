@@ -65,7 +65,7 @@ function createMessage(type, user, data) {
 
 function onConnect() {
     let user = this.user;
-    let msg = createMessage('join', user, `${user.name} joined.`);
+    let msg = createMessage('join', user, `${user.name} 加入了群聊.`);
     this.wss.broadcast(msg);
     // build user list:
     let users = this.wss.clients.map(function (client) {
@@ -84,7 +84,7 @@ function onMessage(message) {
 
 function onClose() {
     let user = this.user;
-    let msg = createMessage('left', user, `${user.name} is left.`);
+    let msg = createMessage('left', user, `${user.name} 离开了...`);
     this.wss.broadcast(msg);
 }
 

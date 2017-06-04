@@ -11,7 +11,7 @@
         <div class="col-md-8">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><span class="glyphicon glyphicon-th-list"></span> Room</h3>
+                    <h3 class="panel-title"><span class="fa fa-comments-o" style="font-size: 20px"></span> 聊天室</h3>
                 </div>
                 <div class="panel-body">
                     <div style="height:400px; overflow-x:hidden; overflow-y:scroll;">
@@ -42,8 +42,8 @@
                     <div>
                         <form id="form-chat" action="#0">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="A good day, isn't it?">
-                                <span class="input-group-btn"><button class="btn btn-default" type="submit">Go</button></span>
+                                <input type="text" class="form-control" placeholder="这都是谁？？">
+                                <span class="input-group-btn"><button class="btn btn-default" type="submit"><i class="fa fa-paper-plane-o"></i></button></span>
                             </div>
                         </form>
                     </div>
@@ -53,7 +53,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><span class="glyphicon glyphicon-user"></span> Users</h3>
+                    <h3 class="panel-title"><span class="fa fa-user-o"></span> 在线列表</h3>
                 </div>
                 <div class="panel-body">
                     <div style="height:434px; overflow-x:hidden; overflow-y:scroll;">
@@ -113,10 +113,10 @@
                         <a class='btn' data-role='p' >p</a>
                     </div>
                     <div class='btn-group'>
-                        <a class='btn' data-role='subscript' ><i class='icon-subscript'></i></a>
-                        <a class='btn' data-role='superscript' ><i class='icon-superscript'></i></a>
+                        <a class='btn' data-role='subscript' ><i class='fa fa-subscript'></i></a>
+                        <a class='btn' data-role='superscript' ><i class='fa fa-superscript'></i></a>
                     </div>
-                    <a v-on:click="addNewText" ><i class="fa-save">提交</i></a>
+                    <a v-on:click="addNewText" style="font-size: 15px;right: 0"><i class="fa fa-save">提交</i></a>
                 </div>
                 <div id='editor' style='' contenteditable>
                     <p>say something...</p>

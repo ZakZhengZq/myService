@@ -6,7 +6,7 @@ var fn_chat = async (ctx, next) => {
     if (user) {
         ctx.render('room.html', {
             user: user,
-            title: 'welcome'
+            title: 'Chat | 疯狂大石头的个人网站'
         });
     } else {
         ctx.response.redirect('/signin');
@@ -19,10 +19,10 @@ module.exports = {
     'GET /ws/chat': fn_chat,
 
     'GET /signin': async (ctx, next) => {
-        let names = '甲乙丙丁戊己庚辛壬癸';
+        let names = ['高富帅','白富美','女汉子','单身狗','斯巴达','王的女人','地表最强','学霸','渣渣','屌丝'];
         let name = names[index % 10];
         ctx.render('signin.html', {
-            name: `路人${name}`
+            name: `${name}`
         });
     },
 

@@ -15,7 +15,7 @@ div[rel="blog_base_inner"] {
     display: table; }
   div[rel="blog_base_inner"] div:after {
     clear: both; }
-  div[rel="blog_base_inner"] div aside {
+  div[rel="blog_base_inner"] div #aside {
     width: 264px;
     float: left;
     margin-left: -264px;
@@ -28,6 +28,28 @@ div[rel="blog_base_inner"] {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     min-height: 600px; }
+  @media only screen and (min-width: 480px) and (max-width: 959px) {
+    div[rel="blog_base_inner"] {
+      padding-left: 50px;
+      background-position: -290px 0 !important; }
+      div[rel="blog_base_inner"] #aside {
+        left: 0;
+        margin: 0;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        width: 50px !important;
+        -webkit-transition: width 0.2s ease-in 0.2s;
+        -moz-transition: width 0.2s ease-in 0.2s;
+        -ms-transition: width 0.2s ease-in 0.2s;
+        transition: width 0.2s ease-in 0.2s; }
+        div[rel="blog_base_inner"] #aside:before, div[rel="blog_base_inner"] #aside:after {
+          content: "";
+          display: table; }
+        div[rel="blog_base_inner"] #aside:after {
+          clear: both; }
+        div[rel="blog_base_inner"] #aside .widgets-container {
+          display: none; } }
 
 div.widget-warp {
   padding: 23.294px 23.294px 13.294px; }
@@ -271,5 +293,40 @@ ul._pagination {
       color: black;
       float: left;
       padding: 8px 5px; }
+
+@media only screen and (max-width: 479px) {
+  div[rel="blog_base_inner"] {
+    padding: 0px;
+    background: none; }
+    div[rel="blog_base_inner"] #aside {
+      margin-left: 0 !important;
+      float: none;
+      margin: 0px;
+      width: 100% !important;
+      background: #f0f0f0 !important; }
+    div[rel="blog_base_inner"] section {
+      float: none; }
+
+  .article-row {
+    padding: 0 10px 0 10px;
+    border: none; }
+
+  .article-summary {
+    width: 100%;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 0 3%;
+    border: 1px solid #eee;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
+
+  .site-header {
+    padding: 24px 0 0; }
+
+  .article-summary-inner {
+    margin-right: 0px !important;
+    padding: 10px 15px 10px; } }
 
 /*# sourceMappingURL=blog_base_inner.css.map */

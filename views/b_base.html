@@ -119,7 +119,8 @@
         </header>
         <div rel="blog_base_inner">
             <div>
-                <aside>
+                <section>{% block main %} {% endblock %}</section>
+                <aside id="aside">
                    <div class="widgets-container">
                        <div class="widget-warp widget-permes">
                            <a href="#" target="_blank">
@@ -172,9 +173,8 @@
                        </div>
                    </div>
                 </aside>
-                <section>{% block main %} {% endblock %}</section>
                 <script src="/static/js/vue.min.js"></script>
-                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+                <script src="/static/js/axios.min.js"></script>
                 <script src="/static/js/b_base/base_body_innerdata.js"></script>
             </div>
         </div>

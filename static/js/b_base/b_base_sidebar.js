@@ -31,4 +31,21 @@ $(document).ready(function() {
             $(this).hide()
         });
     });
+
+    $(".icon-yewan").click(function () {
+        $("body").toggleClass("yewan");
+
+    });
+
+    $(".icon-baitian").click(function () {
+        $("body").toggleClass("yewan");
+    })
+
+    $(".font-type-song").click(function () {
+        $("*").toggleClass("song");
+    })
+
+    $(".font-type-hei").click(function () {
+        $("*").toggleClass("hei");
+    })
 });

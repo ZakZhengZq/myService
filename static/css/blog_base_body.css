@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 87.5%; }
 
@@ -10,6 +11,16 @@ body {
   min-width: 320px; }
   body.custom-font-enabled {
     font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+
+.yewan {
+  background: #222;
+  color: #ccc; }
+
+.song {
+  font-family: "宋体"; }
+
+.hei {
+  font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu; }
 
 /* Minimum width of 960 pixels. */
 @media screen and (min-width: 960px) {

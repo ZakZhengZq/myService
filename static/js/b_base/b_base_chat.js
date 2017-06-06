@@ -120,6 +120,7 @@ $(function () {
                 newText.text=document.getElementById('editor').innerHTML;
                 this.leaveTexts.push(newText);
                 document.getElementById('editor').innerHTML='';
+                this.POST('/ws/chat',newText);
             },
             getDate:function getNowFormatDate() {
                 var date = new Date();
@@ -137,6 +138,29 @@ $(function () {
                     + " " + date.getHours() + seperator2 + date.getMinutes()
                     + seperator2 + date.getSeconds();
                 return currentdate;
+            },
+            POST:function post(URL, PARAMS) {
+                axios.post(URL, PARAMS)
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+                // var temp = document.createElement("form");
+                // //temp.action = URL;
+                // //temp.method = "post";
+                // //temp.style.display = "none";
+                // for (var x in PARAMS) {
+                //     var opt = document.createElement("textarea");
+                //     opt.name = x;
+                //     opt.value = PARAMS[x];
+                //     // alert(opt.name)
+                //     temp.appendChild(opt);
+                // }
+                // document.body.appendChild(temp);
+                // temp.submit();
+                // return temp;
             }
         },
     });

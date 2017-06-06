@@ -8,7 +8,8 @@ let
     lea = model.leaveMsg;
 
 var operation_articles={
-    create:async function(title, type, img, author, abstract, article){
+    create:function(title, type, img, author, abstract, article){
+        return async () => {
             var article = await articles.create({
                 title: title,
                 type: type,
@@ -17,42 +18,38 @@ var operation_articles={
                 abstract: abstract,
                 article: article
             });
-            console.log('created: ' + JSON.stringify(article));
+            //console.log('created: ' + JSON.stringify(article));
+        }
     },
-    find:async (title) => {
-        var article = await articles.findAll({
-            where: {
-                name: title
-            }
-        });
-        //console.log(`find ${pets.length} pets:`);
-        //for (let p of pets) {
-            console.log(JSON.stringify(article));
-        //}
+    find:function (title) {
+        async () => {
+            var article = await articles.findAll({
+                where: {
+                    name: title
+                }
+            });
+            return JSON.stringify(article);
+        }
     }
 };
 
 var operation_leaveMsg={
     create:function (u_photo,u_name,leaveMsg) {
+        let ms=Buffer.from(leaveMsg).toString('base64');
         return async () => {
             var leave = await lea.create({
                 u_photo:u_photo,
                 u_name:u_name,
-                leaveMsg:leaveMsg
+                leaveMsg:ms
             });
-            console.log('created: ' + JSON.stringify(leave));
+            //console.log('created: ' + JSON.stringify(leave));
         }
     },
-    find:async (id) => {
-        var leave = await leaveMsg.findAll({
-            where: {
-                name: id
-            }
-        });
-        //console.log(`find ${pets.length} pets:`);
-        //for (let p of pets) {
-        console.log(JSON.stringify(leave));
-        //}
+    find:function () {
+        return async () => {
+            var leave = await lea.findAll();
+            return JSON.stringify(leave);
+        }
     }
 };
 

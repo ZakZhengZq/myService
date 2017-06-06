@@ -1,6 +1,8 @@
 /**
  * Created by dell on 2017/5/9.
  */
+const operation = require('../model/operation-db');
+
 var fn_chat = async (ctx, next) => {
     let user = ctx.state.user;
     if (user) {
@@ -46,6 +48,11 @@ module.exports = {
     },
 
     'POST /ws/chat': async (ctx, next)=>{
-
+        let
+            photo=ctx.request.body.img,
+            name=ctx.request.body.name,
+            text=ctx.request.body.text;
+        console.log('ph----->'+photo+'    name---->'+name+'    text----->'+text);
+        operation.operation_leaveMsg.create(photo,name,text)();
     }
 };

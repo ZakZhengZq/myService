@@ -23,6 +23,7 @@ app.use(async (ctx, next) => {
 const parseUser = require('./cookie/parseUser');
 app.use(async (ctx, next) => {
     ctx.state.user = parseUser(ctx.cookies.get('name') || '');
+    //console.log('user---->'+ctx.state.user);
     await next();
 });
 

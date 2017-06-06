@@ -2,9 +2,14 @@
  * Created by dell on 2017/5/1.
  */
 const Sequelize = require('sequelize');
+const uuid = require('node-uuid');
 const config = require('./config');
 
 console.log('init sequelize...');
+
+function generateId() {
+    return uuid.v4();
+}
 
 var sequelize = new Sequelize(config.database, config.username, config.password, {
     host: config.host,
@@ -90,5 +95,6 @@ for (let type of TYPES) {
 }
 
 exp.ID = ID_TYPE;
+exp.generateId = generateId;
 
 module.exports = exp;

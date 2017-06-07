@@ -2,6 +2,7 @@
  * Created by hunter on 2017/6/5.
  */
 const model = require('./model');
+const moment = require('./moment');
 
 let
     articles = model.articles,
@@ -47,12 +48,17 @@ var operation_leaveMsg={
     },
     find:function () {
         return async () => {
-            var leave = await lea.findAll();
-            return JSON.stringify(leave);
+            let leave=await lea.findAll();
+            let leaves=[];
+            for (let le of leave){
+                le.dataValues.leaveMsg=(Buffer.from(le.dataValues.leaveMsg, 'base64')).toString();
+                le.dataValues.createdAt=moment(le.dataValues.createdAt).format('YYYY/MM/DD');
+                leaves.push(le.dataValues);
+            }
+            return JSON.stringify(leaves);
         }
     }
 };
-
 
 module.exports={
     operation_articles:operation_articles,

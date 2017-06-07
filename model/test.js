@@ -19,11 +19,12 @@ let ms=Buffer.from(string).toString('base64');
 
 (
     async () => {
-        var article = await lea.findAll();
+        var article = await lea.findAll({});
         //console.log(`find ${pets.length} pets:`);
-        for (let p of article) {
-            let val=JSON.stringify(p)
-        console.log((Buffer.from(JSON.parse(val).leaveMsg, 'base64')).toString());
-        }
+        // for (let p of article) {
+        //     let val=JSON.stringify(p)
+        // console.log((Buffer.from(JSON.parse(val).leaveMsg, 'base64')).toString());
+        // }
+        console.log(article);
     }
 )();

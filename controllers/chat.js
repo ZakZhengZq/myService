@@ -49,10 +49,20 @@ module.exports = {
 
     'POST /ws/chat': async (ctx, next)=>{
         let
-            photo=ctx.request.body.img,
-            name=ctx.request.body.name,
-            text=ctx.request.body.text;
-        console.log('ph----->'+photo+'    name---->'+name+'    text----->'+text);
+            photo=ctx.request.body.u_photo,
+            name=ctx.request.body.u_name,
+            text=ctx.request.body.leaveMsg;
+        //console.log('ph----->'+photo+'    name---->'+name+'    text----->'+text);
         operation.operation_leaveMsg.create(photo,name,text)();
+    },
+
+    'GET /ws/leaTexts':async (ctx,next)=>{
+       await operation.operation_leaveMsg.find()().then(
+            (leaTexts)=>{
+                ctx.response.type='json';
+                ctx.response.body=leaTexts;
+            }
+        )
     }
-};
+}
+

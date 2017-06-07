@@ -45,7 +45,7 @@ $(function () {
     var ws = new WebSocket('ws://localhost:3000/ws/chat');
     ws.onmessage = function (event) {
         var data = event.data;
-        console.log(data);
+        //console.log(data);
         var msg = JSON.parse(data);
         if (id==''||img==''|| name==''){
             id=msg["user"].id;
@@ -88,14 +88,14 @@ $(function () {
         props: ['itemtext'],
         template: '\
                 <div class="leave-body">\
-                    <div class="leave-img"><img v-bind:src=itemtext.img></div>\
+                    <div class="leave-img"><img v-bind:src=itemtext.u_photo></div>\
                     <div class="leave-inner">\
                         <div class="title">\
-                            <span class="name" v-text="itemtext.name">疯狂大石头</span>\
-                            <span class="time" v-text="itemtext.date">今日16:23</span>\
+                            <span class="name" v-text="itemtext.u_name">疯狂大石头</span>\
+                            <span class="time" v-text="itemtext.createdAt">今日16:23</span>\
                         </div>\
                         <div class="inner">\
-                            <p v-bind:id="itemtext.id" class="text" v-html="itemtext.text"></p>\
+                            <p v-bind:id="itemtext.id" class="text" v-html="itemtext.leaveMsg"></p>\
                         </div>\
                     </div>\
                 </div>\
@@ -111,13 +111,16 @@ $(function () {
                 {id:'test4',img:'/static/images/6.png',name:'地表最强',date:'2017-06-05 13:43:21',text:'永遇乐•京口北固亭怀古【宋】辛弃疾千古江山，英雄无觅，孙仲谋处。舞榭歌台，风流总被，雨打风吹去。斜阳草树，寻常巷陌，人道寄奴曾住。想当年，金戈铁马，气吞万里如虎。元嘉草草，封狼居胥，赢得仓皇北顾。四十三年，望中犹记，烽火扬州路。可堪回首，佛狸祠下，一片神鸦社鼓。凭谁问，廉颇老矣，尚能饭否？'},
             ]
         },
+        mounted:function () {
+                this.getLeaveTexts();
+        },
         methods: {
             addNewText: function () {
                 var newText={};
-                newText.img='/static/images/'+img+'.png';
-                newText.name=name;
-                newText.date=this.getDate();
-                newText.text=document.getElementById('editor').innerHTML;
+                newText.u_photo='/static/images/'+img+'.png';
+                newText.u_name=name;
+                newText.createdAt=this.getDate();
+                newText.leaveMsg=document.getElementById('editor').innerHTML;
                 this.leaveTexts.push(newText);
                 document.getElementById('editor').innerHTML='';
                 this.POST('/ws/chat',newText);
@@ -147,24 +150,18 @@ $(function () {
                     .catch(function (error) {
                         console.log(error);
                     });
-                // var temp = document.createElement("form");
-                // //temp.action = URL;
-                // //temp.method = "post";
-                // //temp.style.display = "none";
-                // for (var x in PARAMS) {
-                //     var opt = document.createElement("textarea");
-                //     opt.name = x;
-                //     opt.value = PARAMS[x];
-                //     // alert(opt.name)
-                //     temp.appendChild(opt);
-                // }
-                // document.body.appendChild(temp);
-                // temp.submit();
-                // return temp;
+            },
+            getLeaveTexts:function () {
+                axios.get('/ws/leaTexts')
+                    .then((val)=>{
+                        this.leaveTexts=val.data;
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
             }
-        },
+        }
     });
-
 
     $('#editControls a').click(function(e) {
         switch($(this).data('role')) {

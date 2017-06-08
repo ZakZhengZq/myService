@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9a1432-cd08-4236-b651-f5d1d95f3c46" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/14.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/config.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/b_base.html" afterPath="$PROJECT_DIR$/views/b_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.html" afterPath="$PROJECT_DIR$/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/signin-failed.html" afterPath="$PROJECT_DIR$/views/signin-failed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/signin-ok.html" afterPath="$PROJECT_DIR$/views/signin-ok.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,12 +46,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hello.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/hello.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="29" column="70" lean-forward="false" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
+            <state relative-caret-position="40">
+              <caret line="2" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="193" selection-end-column="14" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signin-failed.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/signin-failed.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="201" column="14" lean-forward="false" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
+              <folding>
+                <marker date="1496936480000" expanded="true" signature="1083:4213" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1129:1283" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1350:4189" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1397:4165" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1464:2765" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1529:2729" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1618:1837" ph="..." />
+                <marker date="1496936480000" expanded="false" signature="1670:1752" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1897:2232" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="2292:2431" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="2832:4137" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="2897:4101" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="2986:3205" ph="..." />
+                <marker date="1496936480000" expanded="false" signature="3038:3120" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="3265:3604" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="3664:3803" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signin-ok.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/signin-ok.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="202" column="14" lean-forward="false" selection-start-line="202" selection-start-column="14" selection-end-line="202" selection-end-column="14" />
+              <folding>
+                <marker date="1496936480000" expanded="true" signature="1088:4218" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1134:1288" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1355:4194" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1402:4170" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1469:2770" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1534:2734" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1623:1842" ph="..." />
+                <marker date="1496936480000" expanded="false" signature="1675:1757" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="1902:2237" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="2297:2436" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="2837:4142" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="2902:4106" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="2991:3210" ph="..." />
+                <marker date="1496936480000" expanded="false" signature="3043:3125" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="3270:3609" ph="..." />
+                <marker date="1496936480000" expanded="true" signature="3669:3808" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,8 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/model/models/Pet.js" />
-        <option value="$PROJECT_DIR$/model/model.js" />
         <option value="$PROJECT_DIR$/model/init-db.js" />
         <option value="$PROJECT_DIR$/data.text" />
         <option value="$PROJECT_DIR$/node_modules/mz/fs.js" />
@@ -149,6 +184,8 @@
         <option value="$PROJECT_DIR$/model/config.js" />
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/views/b_base.html" />
+        <option value="$PROJECT_DIR$/views/signin-failed.html" />
+        <option value="$PROJECT_DIR$/views/signin-ok.html" />
       </list>
     </option>
   </component>
@@ -422,12 +459,12 @@
       <workItem from="1496755895853" duration="11885000" />
       <workItem from="1496816541387" duration="8041000" />
       <workItem from="1496836966664" duration="4640000" />
-      <workItem from="1496930549399" duration="693000" />
+      <workItem from="1496930549399" duration="947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400656000" />
+    <option name="totallyTimeSpent" value="400910000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -439,9 +476,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="677" extended-state="6" />
+    <frame x="0" y="23" width="1366" height="677" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21561338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21561338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -472,13 +510,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/blog_base_sidebar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -532,13 +563,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/signin-failed.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -715,6 +739,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="61" column="19" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="61" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -729,6 +754,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -844,9 +870,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/hello.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="29" column="70" lean-forward="false" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
+        <state relative-caret-position="40">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="193" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/signin-failed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="201" column="14" lean-forward="false" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
+          <folding>
+            <marker date="1496936480000" expanded="true" signature="1083:4213" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1129:1283" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1350:4189" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1397:4165" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1464:2765" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1529:2729" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1618:1837" ph="..." />
+            <marker date="1496936480000" expanded="false" signature="1670:1752" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1897:2232" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="2292:2431" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="2832:4137" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="2897:4101" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="2986:3205" ph="..." />
+            <marker date="1496936480000" expanded="false" signature="3038:3120" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="3265:3604" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="3664:3803" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/signin-ok.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="202" column="14" lean-forward="false" selection-start-line="202" selection-start-column="14" selection-end-line="202" selection-end-column="14" />
+          <folding>
+            <marker date="1496936480000" expanded="true" signature="1088:4218" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1134:1288" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1355:4194" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1402:4170" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1469:2770" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1534:2734" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1623:1842" ph="..." />
+            <marker date="1496936480000" expanded="false" signature="1675:1757" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="1902:2237" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="2297:2436" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="2837:4142" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="2902:4106" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="2991:3210" ph="..." />
+            <marker date="1496936480000" expanded="false" signature="3043:3125" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="3270:3609" ph="..." />
+            <marker date="1496936480000" expanded="true" signature="3669:3808" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

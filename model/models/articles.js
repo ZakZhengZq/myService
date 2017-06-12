@@ -12,5 +12,6 @@ module.exports=db.defineModel('articles',{
     img:db.STRING(100),
     author:db.STRING(100),
     abstract:db.STRING(200),
-    article:db.TEXT
+    article:db.TEXT,
+    date:db.STRING(100)
 });

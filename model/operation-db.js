@@ -40,6 +40,7 @@ var operation_articles={
                 return false;
             }
              await art.findAndCountAll({
+                 attributes:['title','type','img','abstract','date'],
                 order: [['date','DESC']],
                 limit: option+8,
                 offset: option
@@ -67,6 +68,17 @@ var operation_articles={
                 }
             })
             return JSON.stringify(article);
+        }
+    },
+    pages:function () {
+        return async ()=>{
+            let p;
+            await art.count().then(
+                function (result) {
+                    p=Math.ceil(result/8)
+                }
+            )
+            return  p;
         }
     }
 };

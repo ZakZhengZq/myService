@@ -27,5 +27,12 @@ module.exports = {
                 ctx.response.body=x;
             }
         )
+    },
+    'GET /blog/index': async (ctx,next)=>{
+        await operation.operation_articles.pages()().then(
+            (x)=>{
+                ctx.response.body=x;
+            }
+        )
     }
 };

@@ -42,7 +42,7 @@ let
 
 (
     async()=>{
-       await art.findallart(0)().then(
+       await art.pages()().then(
            (x)=>{
                console.log(x)
            }

@@ -306,10 +306,17 @@ div.widget-permes{
   margin-bottom: 10px;
 }
 
+#pagination{
+  margin-top: 20px;
+  width: 100%;
+  border-bottom: 1px solid #ededed;
+  text-align:center
+}
+
 ul._pagination {
   display: inline-block;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   li {
     display: inline;
     a {

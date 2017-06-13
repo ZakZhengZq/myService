@@ -1,6 +1,7 @@
 /**
  * Created by hunter on 2017/6/5.
  */
+const sequelize = require('sequelize');
 const model = require('./model');
 const moment = require('./moment');
 
@@ -79,6 +80,50 @@ var operation_articles={
                 }
             )
             return  p;
+        }
+    },
+    latest:function () {
+        return async ()=>{
+            let latest=[];
+            await art.findAndCountAll({
+                attributes:['title','type','img','author','date'],
+                order: [['date','DESC']],
+                limit: 5,
+                offset: 0
+            }).then(function (result) {
+
+                for (let res of result.rows) {
+                    let arts = res.dataValues;
+                    latest.push(arts);
+                }
+            })
+            return JSON.stringify(latest)
+        }
+    },
+    fenlei:function () {
+        return async ()=>{
+            let res=[];
+           await art.findAll({
+               attributes:['type', ['COUNT("type")','num']],
+               group:'type',
+               raw:true})
+               .then(function(result){
+               res=result;
+           })
+            return JSON.stringify(res);
+        }
+    },
+    guidang:function () {
+        return async ()=>{
+            let res=[];
+            await art.findAll({
+                attributes:[['SUBSTRING(date, 1, 7)','mon'],['COUNT("mon")','num']],
+                group:'mon',
+                raw:true})
+                .then(function(result){
+                    res=result;
+                })
+            return JSON.stringify(res);
         }
     }
 };

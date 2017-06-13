@@ -26,30 +26,30 @@ $(function () {
                     <div class="article-row">\
                         <article class="article article-summary">\
                             <div class="article-summary-inner">\
-                                <a href="/blog/2017/02/10/why-rax/" class="_thumbnail">\
+                                <a v-bind:href=item2[0].href class="_thumbnail">\
                                     <span v-bind:style="\'background-image:url(\'+item2[0].img+\')\'" alt="Why Rax?" class="thumbnail-image"></span>\
                                 </a>\
                                 <div class="article-meta">\
-                                    <p class="category"><a class="article-category-link" href="/categories/无线开发/" v-text="item2[0].type"></a></p>\
+                                    <p class="category"><a class="article-category-link" v-bind:href=item2[0].type_href v-text="item2[0].type"></a></p>\
                                     <p class="date"><time datetime="2017-02-10T10:17:45.000Z" itemprop="datePublished" v-text="item2[0].date"></time></p>\
                                 </div>\
                                 <h2 class="article-title">\
-                                    <a href="/blog/2017/02/10/why-rax/" class="title" v-text="item2[0].title"></a>\
+                                    <a v-bind:href=item2[0].href class="title" v-text="item2[0].title"></a>\
                                 </h2>\
                                 <p class="article-excerpt" v-text="item2[0].abstract"></p>\
                             </div>\
                         </article>\
                         <article class="article article-summary">\
                             <div class="article-summary-inner">\
-                                <a href="/blog/2017/02/10/why-rax/" class="_thumbnail">\
+                                <a v-bind:href=item2[1].href class="_thumbnail">\
                                     <span v-bind:style="\'background-image:url(\'+item2[1].img+\')\'" alt="Why Rax?" class="thumbnail-image"></span>\
                                 </a>\
                                 <div class="article-meta">\
-                                    <p class="category"><a class="article-category-link" href="/categories/无线开发/" v-text="item2[1].type"></a></p>\
+                                    <p class="category"><a class="article-category-link" v-bind:href=item2[1].type_href v-text="item2[1].type"></a></p>\
                                     <p class="date"><time datetime="2017-02-10T10:17:45.000Z" itemprop="datePublished" v-text="item2[1].date"></time></p>\
                                 </div>\
                                 <h2 class="article-title">\
-                                    <a href="/blog/2017/02/10/why-rax/" class="title" v-text="item2[1].title"></a>\
+                                    <a v-bind:href=item2[1].href class="title" v-text="item2[1].title"></a>\
                                 </h2>\
                                 <p class="article-excerpt" v-text="item2[1].abstract"></p>\
                             </div>\
@@ -60,7 +60,7 @@ $(function () {
                 '
     });
 
-    new Vue({
+   var articles= new Vue({
         el: '#articleId',
         data: {
             articleInfor: []
@@ -181,6 +181,7 @@ $(function () {
                         }
                     }
                 }
+                this.GETARTSBYINDEX((parseInt(document.getElementById(event.target.id).innerText)-1)*8);
             },
             disappear: function () {
                 for (let i = 0; i < 5; i++) {
@@ -229,6 +230,15 @@ $(function () {
                     this.staticNum[0].display = true;
                     this.staticNum[1].display = true;
                 }
+            },
+            GETARTSBYINDEX:function (x) {
+                axios.post('/blog/arts', {index:x})
+                    .then( (response)=> {
+                        articles.articleInfor=response.data;
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
             }
         }
     });

@@ -34,5 +34,26 @@ module.exports = {
                 ctx.response.body=x;
             }
         )
+    },
+    'GET /blog/latest':async (ctx,next)=>{
+        await operation.operation_articles.latest()().then(
+            (x)=>{
+                ctx.response.body=x;
+            }
+        )
+    },
+    'GET /blog/fenlei':async (ctx,next)=>{
+        await operation.operation_articles.fenlei()().then(
+            (x)=>{
+                ctx.response.body=x;
+            }
+        )
+    },
+    'GET /blog/guidang':async (ctx,next)=>{
+        await operation.operation_articles.guidang()().then(
+            (x)=>{
+                ctx.response.body=x;
+            }
+        )
     }
 };

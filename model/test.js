@@ -42,7 +42,7 @@ let
 
 (
     async()=>{
-       await art.pages()().then(
+       await art.guidang()().then(
            (x)=>{
                console.log(x)
            }

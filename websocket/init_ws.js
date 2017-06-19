@@ -49,6 +49,7 @@ function init_ws(server, onConnection, onMessage, onClose, onError) {
         ws.on('close', onClose);
         ws.on('error', onError);
         // ws.upgradeReq是一个request对象:
+        console.log(ws.upgradeReq.headers);
         let user = parseUser(ws.upgradeReq);
         if (!user) {
             // Cookie不存在或无效，直接关闭WebSocket:

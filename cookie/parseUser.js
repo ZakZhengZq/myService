@@ -18,7 +18,7 @@ function parseUser(obj) {
     if (s){
         try {
             let user = JSON.parse(Buffer.from(s, 'base64').toString());
-            //console.log('get name:${user.name} and id:${user.id}');
+            //console.log(`get name:${user.name} and id:${user.id}`);
             return user
         }catch(e) {
             console.log(e);

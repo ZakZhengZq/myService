@@ -19,6 +19,9 @@ var fn_blog = async (ctx, next) => {
 module.exports = {
     'GET /': fn_hello,
     'GET /blog': fn_blog,
+    'GET /xhr':async (ctx, next) => {
+        ctx.render('xhr.html', {});
+    },
     'POST /blog/arts': async (ctx,next)=> {
         let index=ctx.request.body.index;
         await operation.operation_articles.findallart(index)().then(

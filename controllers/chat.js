@@ -5,6 +5,7 @@ const operation = require('../model/operation-db');
 
 var fn_chat = async (ctx, next) => {
     let user = ctx.state.user;
+    //console.log('==================>'+user.name);
     if (user) {
         ctx.render('room.html', {
             user: user,

@@ -85,7 +85,7 @@ body {
     }
   }
 }
-nav {
+nav[role="navigation"]{
   margin-top: 20px;
   border-bottom: 1px solid #ededed;
   border-top: 1px solid #ededed;

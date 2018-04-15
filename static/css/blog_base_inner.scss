@@ -30,7 +30,7 @@ div[rel="blog_base_inner"]{
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      min-height: 600px;
+      min-height: 400px;
     }
   }
 
@@ -184,6 +184,17 @@ div.widget-permes{
   color: #666;
   border-bottom: 1px solid #eee;
 }
+.archive{
+  margin-right: 5px;
+}
+.archive-year{
+  font-size: 16px;
+  color: #666;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
 .articles{
   -webkit-column-gap: 10px;
   -moz-column-gap: 10px;
@@ -295,10 +306,17 @@ div.widget-permes{
   margin-bottom: 10px;
 }
 
+#pagination{
+  margin-top: 20px;
+  width: 100%;
+  border-bottom: 1px solid #ededed;
+  text-align:center
+}
+
 ul._pagination {
   display: inline-block;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   li {
     display: inline;
     a {

@@ -78,13 +78,13 @@ body {
       .site-header h1 a:hover, .site-header h2 a:hover {
         color: #21759b; }
 
-nav {
+nav[role="navigation"] {
   margin-top: 20px;
   border-bottom: 1px solid #ededed;
   border-top: 1px solid #ededed;
   display: inline-block !important;
   width: 100%; }
-  nav .container-fluid .navbar-header button {
+  nav[role="navigation"] .container-fluid .navbar-header button {
     position: relative;
     float: right;
     height: 50px;
@@ -92,26 +92,26 @@ nav {
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px; }
-    nav .container-fluid .navbar-header button:focus {
+    nav[role="navigation"] .container-fluid .navbar-header button:focus {
       outline: 0; }
     @media (min-width: 768px) {
-      nav .container-fluid .navbar-header button {
+      nav[role="navigation"] .container-fluid .navbar-header button {
         display: none; } }
-  nav .container-fluid .navbar-header a {
+  nav[role="navigation"] .container-fluid .navbar-header a {
     color: #757575;
     font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
   @media (min-width: 968px) {
-    nav .container-fluid #example-navbar-collapse ul {
+    nav[role="navigation"] .container-fluid #example-navbar-collapse ul {
       margin-left: 150px; } }
   @media (min-width: 868px) and (max-width: 968px) {
-    nav .container-fluid #example-navbar-collapse ul {
+    nav[role="navigation"] .container-fluid #example-navbar-collapse ul {
       margin-left: 100px; } }
-  nav .container-fluid #example-navbar-collapse ul li {
+  nav[role="navigation"] .container-fluid #example-navbar-collapse ul li {
     font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     margin-right: 60px; }
-    nav .container-fluid #example-navbar-collapse ul li a {
+    nav[role="navigation"] .container-fluid #example-navbar-collapse ul li a {
       color: #757575; }
-      nav .container-fluid #example-navbar-collapse ul li a:hover {
+      nav[role="navigation"] .container-fluid #example-navbar-collapse ul li a:hover {
         color: #21759b; }
 
 footer[role="contentinfo"] {

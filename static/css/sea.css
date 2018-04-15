@@ -1,0 +1,122 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 12px "宋体", "Arial Narrow", HELVETICA;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #2d374b;
+    text-decoration: none
+}
+
+a:hover {
+    color: #cd0200;
+    text-decoration: underline
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+.div {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: 0 auto;
+    width: 641px;
+}
+
+.form {
+    margin-top: 181.297px;
+    text-align: center;
+    font-size: 0px;
+}
+
+.text {
+    height: 20px;
+    width: 400px;
+    font-size: 16px;
+    border-top: 1px solid rgb(153, 153, 153);
+    border-right: 0px none rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(179, 179, 179);
+    border-left: 1px solid rgb(153, 153, 153);
+    margin: 0;
+    padding: 8px 78px 9px 7px;
+    outline: none;
+}
+
+.text:focus {
+    border-top: 1px solid rgb(51, 136, 255);
+    border-right: 0px none rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(51, 136, 255);
+    border-left: 1px solid rgb(51, 136, 255);
+}
+
+.submit {
+    font-size: 16px;
+    background-color: rgb(49, 126, 243);
+    color: rgb(255, 255, 255);
+    height: 39px;
+    width: 102px;
+    border-top: 0px none rgb(255, 255, 255);
+    border-right: 0px none rgb(255, 255, 255);
+    border-bottom: 0px solid rgb(40, 104, 200);
+    border-left: 0px none rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.ul {
+    display: none;
+    position: relative;
+    width: 485px;
+    margin: 0 auto;
+    left: -51px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(237, 237, 237) 1px 3px 3px 0px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.ul li {
+    height: 22px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    display: list-item;
+    list-style-position: outside;
+    padding: 0px 8px;
+}
+
+.ul li:hover {
+    background-color: rgb(240, 240, 240);
+    cursor: default;
+}
+.select{
+    background-color: rgb(240, 240, 240);
+}

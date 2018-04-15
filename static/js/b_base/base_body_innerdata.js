@@ -11,9 +11,9 @@ var wl=new Vue({
     },
     methods:{
         latestArticle:function () {
-            axios.get('/static/acti.json')
+            axios.get('/blog/latest')
                 .then((response)=>{
-                    this.articleList=response.data.result.latestarticle;
+                    this.articleList=response.data;
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -32,9 +32,9 @@ var wf=new Vue({
     },
     methods:{
         latestArticle:function () {
-            axios.get('/static/acti.json')
+            axios.get('/blog/fenlei')
                 .then((response)=>{
-                    this.fenleiList=response.data.result.fenlei;
+                    this.fenleiList=response.data;
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -53,9 +53,9 @@ var wg=new Vue({
     },
     methods:{
         latestArticle:function () {
-            axios.get('/static/acti.json')
+            axios.get('/blog/guidang')
                 .then((response)=>{
-                    this.guidangList=response.data.result.guidang;
+                    this.guidangList=response.data;
                 })
                 .catch(function (error) {
                     console.log(error);

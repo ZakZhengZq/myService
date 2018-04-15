@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9a1432-cd08-4236-b651-f5d1d95f3c46" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/signin-failed.html" afterPath="$PROJECT_DIR$/views/signin-failed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/signin-ok.html" afterPath="$PROJECT_DIR$/views/signin-ok.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +23,7 @@
       <file leaf-file-name="b_base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/b_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
+            <state relative-caret-position="1160">
               <caret line="110" column="55" lean-forward="false" selection-start-line="110" selection-start-column="55" selection-end-line="110" selection-end-column="55" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -50,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/views/hello.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
-              <caret line="2" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="193" selection-end-column="14" />
+              <caret line="2" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="193" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -59,7 +58,7 @@
       <file leaf-file-name="signin-failed.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/signin-failed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="4020">
               <caret line="201" column="14" lean-forward="false" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
               <folding>
                 <marker date="1496936480000" expanded="true" signature="1083:4213" ph="..." />
@@ -86,7 +85,7 @@
       <file leaf-file-name="signin-ok.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/signin-ok.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="3486">
               <caret line="202" column="14" lean-forward="false" selection-start-line="202" selection-start-column="14" selection-end-line="202" selection-end-column="14" />
               <folding>
                 <marker date="1496936480000" expanded="true" signature="1088:4218" ph="..." />
@@ -224,7 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,6 +279,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -459,12 +458,13 @@
       <workItem from="1496755895853" duration="11885000" />
       <workItem from="1496816541387" duration="8041000" />
       <workItem from="1496836966664" duration="4640000" />
-      <workItem from="1496930549399" duration="947000" />
+      <workItem from="1496930549399" duration="1081000" />
+      <workItem from="1497024557390" duration="157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400910000" />
+    <option name="totallyTimeSpent" value="401201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -476,10 +476,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="677" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1366" height="677" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21561338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21561338" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -754,7 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,28 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="122" column="32" lean-forward="false" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
-          <folding>
-            <element signature="e#1784#2073#0" expanded="false" />
-            <element signature="e#2113#2173#0" expanded="false" />
-            <element signature="e#2215#2466#0" expanded="false" />
-            <element signature="e#4818#5529#0" expanded="false" />
-            <element signature="e#5575#5862#0" expanded="false" />
-            <element signature="e#6254#6596#0" expanded="false" />
-            <marker date="1496839671000" expanded="true" signature="2592:3207" ph="..." />
-            <marker date="1496839671000" expanded="true" signature="2723:3183" ph="..." />
-            <marker date="1496839671000" expanded="true" signature="2768:2977" ph="..." />
-            <marker date="1496839671000" expanded="true" signature="3022:3155" ph="..." />
-            <marker date="1496839671000" expanded="true" signature="3610:3616" ph=" " />
-            <marker date="1496839671000" expanded="true" signature="3616:3622" ph=" " />
-            <marker date="1496839671000" expanded="true" signature="3622:3628" ph=" " />
-            <marker date="1496839671000" expanded="true" signature="3628:3634" ph=" " />
-            <marker date="1496839671000" expanded="true" signature="3634:3640" ph=" " />
-            <marker date="1496839671000" expanded="true" signature="3708:3714" ph=" " />
-            <marker date="1496839671000" expanded="true" signature="3714:3720" ph=" " />
-            <marker date="1496839671000" expanded="true" signature="3720:3726" ph=" " />
-            <marker date="1496839671000" expanded="true" signature="3726:3732" ph=" " />
-            <marker date="1496839671000" expanded="true" signature="3732:3738" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,7 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="83" lean-forward="false" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,13 +816,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/b_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
+        <state relative-caret-position="1160">
           <caret line="110" column="55" lean-forward="false" selection-start-line="110" selection-start-column="55" selection-end-line="110" selection-end-column="55" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -871,14 +845,14 @@
     <entry file="file://$PROJECT_DIR$/views/hello.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="193" selection-end-column="14" />
+          <caret line="2" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="193" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/signin-failed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="4020">
           <caret line="201" column="14" lean-forward="false" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
           <folding>
             <marker date="1496936480000" expanded="true" signature="1083:4213" ph="..." />
@@ -903,7 +877,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/signin-ok.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="3486">
           <caret line="202" column="14" lean-forward="false" selection-start-line="202" selection-start-column="14" selection-end-line="202" selection-end-column="14" />
           <folding>
             <marker date="1496936480000" expanded="true" signature="1088:4218" ph="..." />

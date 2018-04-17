@@ -8,6 +8,42 @@ const moment = require('./moment');
 let
     art = model.articles,
     lea = model.leaveMsg;
+    tools = model.tools;
+
+var operation_tools = {
+    pages:function () {
+        return async ()=>{
+            let p;
+            await tools.count().then(
+                function (result) {
+                    p=Math.ceil(result/8)
+                }
+            )
+            return  p;
+        }
+    },
+    getAllTools:function (option) {
+        return async () => {
+            let returnTools = {};
+            await tools.findAndCountAll({
+                attributes:['title','type','img','abstract','date','id','url'],
+                order: [['date','DESC']],
+                limit: option+8,
+                offset: option
+            }).then(function (result) {
+                for (let res of result.rows){
+                    let month=res.dataValues.date.substr(0,7);
+                    if (returnTools[month]) {
+                        returnTools[month].push(res.dataValues);
+                    } else {
+                        returnTools[month] = [res.dataValues];
+                    }
+                }
+            })
+            return JSON.stringify(returnTools);
+        }
+    }
+}
 
 var operation_articles={
     create:function(title, type, img, author, abstract, article,date){
@@ -26,8 +62,9 @@ var operation_articles={
     },
     findallart:function (option) {
         return async () => {
-            let article =[];
-            let menu=[];
+            // let article =[];
+            // let menu=[];
+            let article = {};
             Array.prototype.position=function (needle) {
                 for (i in this) {
                     if (this[i].date == needle) return i;
@@ -40,36 +77,59 @@ var operation_articles={
                 }
                 return false;
             }
-             await art.findAndCountAll({
-                 attributes:['title','type','img','abstract','date'],
+            await art.findAndCountAll({
+                attributes:['title','type','img','abstract','date','id'],
                 order: [['date','DESC']],
                 limit: option+8,
                 offset: option
             }).then(function (result) {
                 for (let res of result.rows){
                     let month=res.dataValues.date.substr(0,7);
-                    if (!menu.contains(month)){
-                        menu.push(month);
-                        let dome={date:month.substr(0,4)+'年'+month.substr(6,1)+'月', test:[]}
-                        let two=[];
-                        two.push(res.dataValues);
-                        dome.test.push(two);
-                        article.push(dome)
-                        continue;
-                    }
+                    // if (!menu.contains(month)){
+                    //     menu.push(month);
+                    //     let dome={
+                    //         date: month.substr(0,4)+'年'+month.substr(6,1)+'月',
+                    //         test: []
+                    //     }
+                    //     let two=[];
+                    //     two.push(res.dataValues);
+                    //     dome.test.push(two);
+                    //     article.push(dome)
+                    //     continue;
+                    // }
 
-                    let i=article.position(month.substr(0,4)+'年'+month.substr(6,1)+'月');
-                    if (article[i].test[article[i].test.length-1].length==2){
-                        let two = [];
-                        two.push(res.dataValues);
-                        article[i].test.push(two);
-                    }else {
-                        article[i].test[article[i].test.length-1].push(res.dataValues);
+                    // let i= article.position(month.substr(0,4)+'年'+month.substr(6,1)+'月');
+                    // if (article[i].test[article[i].test.length-1].length==2){
+                    //     let two = [];
+                    //     two.push(res.dataValues);
+                    //     article[i].test.push(two);
+                    // }else {
+                    //     article[i].test[article[i].test.length-1].push(res.dataValues);
+                    // }
+                    if (article[month]) {
+                        article[month].push(res.dataValues);
+                    } else {
+                        article[month] = [res.dataValues];
                     }
                 }
             })
             return JSON.stringify(article);
         }
+    },
+    getArtById: async (id) => {
+        return art.findAll({
+            where: {
+                id
+            }
+        }).catch(e => {
+            console.log(e)
+        });
+    },
+    upSertArt: async (article) => {
+        return art.upsert(article, {})
+        .catch(e => {
+            console.log(e)
+        });
     },
     pages:function () {
         return async ()=>{
@@ -158,5 +218,6 @@ var operation_leaveMsg={
 
 module.exports={
     operation_articles:operation_articles,
-    operation_leaveMsg:operation_leaveMsg
+    operation_leaveMsg:operation_leaveMsg,
+    operation_tools:operation_tools,
 }

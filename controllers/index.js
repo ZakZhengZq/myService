@@ -2,6 +2,9 @@
  * Created by dell on 2017/4/28.
  */
 const operation = require('../model/operation-db');
+const crypto = require('crypto');
+const hash = crypto.createHash('md5');
+
 var fn_hello = async (ctx, next) => {
     //var name = ctx.params.name;
     //ctx.response.body = '<h1>Hello, ${name}!</h1>';
@@ -31,8 +34,44 @@ module.exports = {
             }
         )
     },
+    'POST /tools': async (ctx,next)=> {
+        let index=ctx.request.body.index;
+        await operation.operation_tools.getAllTools(index)().then(
+            (x)=>{
+                ctx.response.type='json';
+                ctx.response.body=x;
+            }
+        )
+    },
+    'POST /blog/getArtById': async (ctx,next) => {
+        let id=ctx.request.body.id;
+        await operation.operation_articles.getArtById(id).then(
+            (x)=>{
+                ctx.response.type='json';
+                ctx.response.body=x;
+            }
+        )
+    },
+    'POST /blog/upSertArt': async (ctx,next) => {
+        let art=ctx.request.body.formValidate;
+        hash.update(JSON.stringify(art));
+        art.id = hash.digest('hex');
+        await operation.operation_articles.upSertArt(art).then(
+            (x)=>{
+                ctx.response.type='json';
+                ctx.response.body=x;
+            }
+        )
+    },
     'GET /blog/index': async (ctx,next)=>{
         await operation.operation_articles.pages()().then(
+            (x)=>{
+                ctx.response.body=x;
+            }
+        )
+    },
+    'GET /tools/index': async (ctx,next)=>{
+        await operation.operation_tools.pages()().then(
             (x)=>{
                 ctx.response.body=x;
             }

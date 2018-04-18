@@ -27,7 +27,7 @@ function init_ws(server, onConnection, onMessage, onClose, onError) {
         console.log('[SERVER] connected...');
         let location = url.parse(ws.upgradeReq.url, true);
         console.log('[WebSocketServer] connection: ' + location.href);
-        if (location.pathname !== '/ws/chat') {
+        if (location.pathname.indexOf('/ws/chat') < 0 ) {
             // close ws:
             ws.close(4000, 'Invalid URL');
         }
@@ -45,8 +45,11 @@ function init_ws(server, onConnection, onMessage, onClose, onError) {
                 console.log('[WebSocket] error: ' + err);
             };
         // ws.upgradeReq是一个request对象:
-        console.log(ws.upgradeReq.headers);
-        let user = parseUser(ws.upgradeReq);
+        // console.log(ws.upgradeReq.headers);
+        //let user = parseUser(ws.upgradeReq);
+        let href = location.href;
+        let userBuffer = new Buffer(href.slice(href.indexOf('=')+1), 'base64').toString();
+        let user = JSON.parse(userBuffer)
         if (!user) {
             // Cookie不存在或无效，直接关闭WebSocket:
             console.log('Cookie不存在或无效，直接关闭WebSocket:user==>'+user);

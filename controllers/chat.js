@@ -4,6 +4,8 @@
 const operation = require('../model/operation-db');
 
 var fn_chat = async (ctx, next) => {
+    let a = {name: "haha", age: 15, add: "gg"}
+    console.log('test    ', Buffer.from(JSON.stringify(a)).toString('base64'));
     let user = ctx.state.user;
     //console.log('==================>'+user.name);
     if (user) {

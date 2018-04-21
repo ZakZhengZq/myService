@@ -25,13 +25,13 @@ var operation_tools = {
     getAllTools:function (option) {
         return async () => {
             let returnTools = {};
-            await tools.findAndCountAll({
+            await tools.findAll({
                 attributes:['title','type','img','abstract','date','id','url'],
                 order: [['date','DESC']],
                 limit: option+8,
                 offset: option
             }).then(function (result) {
-                for (let res of result.rows){
+                for (let res of result){
                     let month=res.dataValues.date.substr(0,7);
                     if (returnTools[month]) {
                         returnTools[month].push(res.dataValues);

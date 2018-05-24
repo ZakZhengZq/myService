@@ -146,7 +146,7 @@ var operation_articles={
         return async ()=>{
             let latest=[];
             await art.findAndCountAll({
-                attributes:['title','type','img','author','date'],
+                attributes:['title','type','img','author','date','id'],
                 order: [['date','DESC']],
                 limit: 5,
                 offset: 0

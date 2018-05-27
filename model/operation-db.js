@@ -42,6 +42,34 @@ var operation_tools = {
             })
             return JSON.stringify(returnTools);
         }
+    },
+    getTools:function () {
+        return async ()=>{
+            let res=[];
+            await tools.findAndCountAll({
+                attributes:['title','type','img','abstract','date','id','url','author'],
+                order: [['date','DESC']],
+                limit: 100})
+                .then(function(result){
+                    res=result;
+                })
+            return JSON.stringify(res);
+        }
+    },
+    deleteToolById: async (id) => {
+        return tools.destroy({
+            where: {
+                id
+            }
+        }).catch(e => {
+            console.log(e)
+        });
+    },
+    upSertTool: async (tool) => {
+        return tools.upsert(tool, {})
+        .catch(e => {
+            console.log(e)
+        });
     }
 }
 
@@ -185,6 +213,28 @@ var operation_articles={
                 })
             return JSON.stringify(res);
         }
+    },
+    getAllArts:function () {
+        return async ()=>{
+            let res=[];
+            await art.findAndCountAll({
+                attributes:['title','type','img','abstract','date','id','article','author'],
+                order: [['date','DESC']],
+                limit: 100})
+                .then(function(result){
+                    res=result;
+                })
+            return JSON.stringify(res);
+        }
+    },
+    deleteArtById: async (id) => {
+        return art.destroy({
+            where: {
+                id
+            }
+        }).catch(e => {
+            console.log(e)
+        });
     }
 };
 

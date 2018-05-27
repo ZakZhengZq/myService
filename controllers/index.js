@@ -97,5 +97,48 @@ module.exports = {
                 ctx.response.body=x;
             }
         )
+    },
+    'GET /manager/getAllArts':async (ctx,next)=>{
+        await operation.operation_articles.getAllArts()().then(
+            (x)=>{
+                ctx.response.body=x;
+            }
+        )
+    },
+    'POST /manager/daleteArtById': async (ctx,next) => {
+        let id=ctx.request.body.id;
+        await operation.operation_articles.deleteArtById(id).then(
+            (x)=>{
+                ctx.response.type='json';
+                ctx.response.body=x;
+            }
+        )
+    },
+    'GET /manager/getTools':async (ctx,next)=>{
+        await operation.operation_tools.getTools()().then(
+            (x)=>{
+                ctx.response.body=x;
+            }
+        )
+    },
+    'POST /manager/daleteToolById': async (ctx,next) => {
+        let id=ctx.request.body.id;
+        await operation.operation_tools.deleteToolById(id).then(
+            (x)=>{
+                ctx.response.type='json';
+                ctx.response.body=x;
+            }
+        )
+    },
+    'POST /manager/upSertTool': async (ctx,next) => {
+        let tool=ctx.request.body.formValidate;
+        hash.update(JSON.stringify(tool));
+        tool.id = hash.digest('hex');
+        await operation.operation_tools.upSertTool(tool).then(
+            (x)=>{
+                ctx.response.type='json';
+                ctx.response.body=x;
+            }
+        )
     }
 };
